@@ -1,0 +1,41 @@
+/* CSS Color Variables */
+:root {
+	/* Colors */
+	--main__color: #000;
+	--secondary__color: #fff;
+	--tertiary__color: #e5f386;
+	--quaternary__color: #f5de81;
+	/* Alerts */
+	--danger__color: #ff0000;
+	--warning__color: #ffae00;
+	--success__color: #00ff00;
+	/* Links */
+	--active__link: #bf8832;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.nav__links {
+	color: #000;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin: 0 10px;
+	padding: 10px 0;
+	border-bottom: 2px solid transparent;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav__links:hover {
+	border-bottom: 2px solid #000;
+}
