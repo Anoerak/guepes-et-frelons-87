@@ -1,39 +1,82 @@
-// Guêpes et Frelons 87 Footer component
 import React from 'react';
-import './Footer.css';
+
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot, faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons';
+
+import dataset from '@Utils/assets/data/dataset.json';
+import head_logo from '@Utils/assets/images/head-logo.png';
+
+import './Footer.css';
 
 function Footer() {
 	return (
-		<div className='Footer'>
-			<div className='FooterContent'>
-				<div className='FooterMenu'>
-					<Link to='/'>Accueil</Link>
-					<Link to='/about'>Qui sommes-nous ?</Link>
-					<Link to='/services'>Nos services</Link>
-					<Link to='/contact'>Contact</Link>
-				</div>
-				<div className='FooterContact'>
-					<h3>Guêpes et Frelons 87</h3>
-					<h4>Désinsectisation Dératisation Désinfection Traitement du bois</h4>
-					<p>06 10 10 10 10</p>
-					<p>
-						guêpes et frelons
-						<span className='FooterAt'>arobase</span>
-						orange.fr
-					</p>
+		<footer>
+			<div className='footer__container'>
+				<div className='footer__content'>
+					<div className='footer__content__left'>
+						<div className='footer__content__left__logo'>
+							<Link to='/'>
+								<img src={head_logo} alt='logo-wasp-targeted' />
+							</Link>
+						</div>
+						<div className='footer__content__left__text'>
+							<p>Some text here</p>
+						</div>
+					</div>
+					{/* <div className='footer__content__center'>
+						<h2>Navigation</h2>
+						<ul>
+							{dataset.navbarLinks.map((link) => {
+								const { id, title, path } = link;
+								return (
+									<li className='footer__links__list' key={id}>
+										<Link className='nav__links' to={path}>
+											{title}
+										</Link>
+									</li>
+								);
+							})}
+						</ul>
+					</div> */}
+					<div className='footer__content__right'>
+						<div className='footer__content__right__contact__title'>
+							<h2>Contact</h2>
+						</div>
+						<div className='footer__content__right__contact__text'>
+							<h3>
+								<FontAwesomeIcon icon={faLocationDot} />
+								Adresse
+							</h3>
+							<p>
+								{dataset.contactInfos.address}
+								<br />
+								{dataset.contactInfos.zipCode} {dataset.contactInfos.city}
+							</p>
+							<div className='direct__contact'>
+								<div className='phone'>
+									<h3>
+										<FontAwesomeIcon icon={faPhone} />
+										Téléphone
+									</h3>
+									<a href='tel:+337604013'>{dataset.contactInfos.phone}</a>
+								</div>
+								<div className='mail'>
+									<h3>
+										<FontAwesomeIcon icon={faPaperPlane} />
+										Email
+									</h3>
+									<a href='mailto:guepes.frelons87@gmail.com'>{dataset.contactInfos.email}</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div className='FooterLegal'>
-				<p>Guêpes et Frelons 87 - 2021</p>
-				<p>
-					Site réalisé par{' '}
-					<a href='https://www.linkedin.com/in/sebastien/' target='_blank' rel='noreferrer'>
-						Sébastien
-					</a>
-				</p>
+			<div className='footer__bottom'>
+				<p>© 2023 Guêpes et Frelons 87. Tous droits réservés.</p>
 			</div>
-		</div>
+		</footer>
 	);
 }
 

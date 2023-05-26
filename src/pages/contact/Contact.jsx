@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ContactForm from '../../components/forms/contact_form/ContactForm';
+import ContactForm from '@Components/forms/contact_form/ContactForm';
 
 function Contact() {
 	return <ContactForm />;

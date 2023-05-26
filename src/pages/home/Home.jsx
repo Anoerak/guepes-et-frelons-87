@@ -1,11 +1,17 @@
-// Home Page for the "Guêpes et Frelons 87"
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+// import Slideshow from '../../components/slideshow/Slideshow';
+import Slideshow from '@Components/slideshow/Slideshow';
 
 import './Home.css';
 
 function Home() {
-	return <h1>Hello, I'm the Home Component, please fill me out with good stuff!!!</h1>;
+	return (
+		<section id='home'>
+			<Slideshow />
+			<h1>Hello, I'm the Home Component, please fill me out with good stuff!!!</h1>
+		</section>
+	);
 }
 
 export default Home;

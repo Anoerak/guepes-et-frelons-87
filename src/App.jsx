@@ -1,15 +1,15 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import Header from '@Components/header/Header';
+import Footer from '@Components/footer/Footer';
 
-import Home from './pages/home/Home';
-import Deratisation from './pages/deratisation/Deratisation';
-import Contact from './pages/contact/Contact';
-import Devis from './pages/devis/Devis';
+import Home from '@Pages/home/Home';
+import Deratisation from '@Pages/deratisation/Deratisation';
+import Contact from '@Pages/contact/Contact';
+import Devis from '@Pages/devis/Devis';
 
-import './utils/styles/App.css';
+import '@Utils/styles/App.css';
 
 function App() {
 	return (

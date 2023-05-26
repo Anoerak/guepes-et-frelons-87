@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ErrorBoundary } from 'react-error-boundary';
-import { store } from './app/store';
+import { store } from '@App/store';
 
 import App from './App';
 
-import './utils/styles/index.css';
+import '@Styles/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

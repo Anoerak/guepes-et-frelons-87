@@ -1,0 +1,88 @@
+{
+	"Company": {
+		"name": "Guêpes Frelons 87",
+		"siret": "00000000000000",
+		"logo": "../images/logo.png",
+		"website": "https://guepes-frelons87.fr"
+	},
+	"contactInfos": {
+		"phone": "07 60 40 13 48",
+		"email": "guepes.frelons87@gmail.com",
+		"address": "16 route de Jumilhac",
+		"zipCode": "87500",
+		"city": "Saint-Yrieix-la-Perche"
+	},
+	"socialNetworks": {
+		"facebook": "https://www.facebook.com/guepes.frelons87",
+		"instagram": "https://www.instagram.com/guepes.frelons87/"
+	},
+	"navbarLinks": [
+		{
+			"id": 1,
+			"title": "Accueil",
+			"path": "/"
+		},
+		{
+			"id": 2,
+			"title": "Désinsectisation",
+			"path": "/desinsectisations"
+		},
+		{
+			"id": 3,
+			"title": "Dératisation",
+			"path": "/deratisation"
+		},
+		{
+			"id": 4,
+			"title": "Désinfection",
+			"path": "/desinfection"
+		},
+		{
+			"id": 5,
+			"title": "Traitements bois",
+			"path": "/traitements-bois"
+		},
+		{
+			"id": 6,
+			"title": "Actualités",
+			"path": "/actualites"
+		},
+		{
+			"id": 7,
+			"title": "Devis",
+			"path": "/devis"
+		},
+		{
+			"id": 8,
+			"title": "Contact",
+			"path": "/contact"
+		}
+	],
+	"slideShowCollection": [
+		{
+			"id": 1,
+			"path": "./utils/assets/images/slide1.jpg",
+			"alt": "Hornets on a nest."
+		},
+		{
+			"id": 2,
+			"path": "./utils/assets/images/slide2.jpg",
+			"alt": "A man spreading product on a wall to remove lychen."
+		},
+		{
+			"id": 3,
+			"path": "./utils/assets/images/slide3.jpg",
+			"alt": "A bee on a tree branch."
+		},
+		{
+			"id": 4,
+			"path": "./utils/assets/images/slide4.jpg",
+			"alt": "A man dealing with hornets on a roof."
+		},
+		{
+			"id": 5,
+			"path": "./utils/assets/images/slide5.jpg",
+			"alt": "A mouse approaching a house."
+		}
+	]
+}
