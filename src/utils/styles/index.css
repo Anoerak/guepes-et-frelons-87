@@ -16,6 +16,7 @@
 	/* Background Images */
 	--bees__nest__bg: url('@Images/header-bg.jpg');
 	--pest__controller__bg: url('@Images/pest_control_in_action.jpg');
+	--third__article__bg: url('@Images/red_wasp.jpg');
 }
 
 body {

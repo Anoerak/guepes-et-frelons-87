@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -30,12 +30,26 @@ function Header() {
 			//
 		}
 	}
+
+	const handleScroll = useCallback(() => {
+		if (window.scrollY > 100) {
+			navMenu.classList.add('scroll__header');
+		} else {
+			navMenu.classList.remove('scroll__header');
+		}
+	}, [navMenu]);
+
 	useEffect(() => {
 		setNavbar(document.querySelector('.navbar'));
 		setHamburgerMenu(document.querySelector('.hamburger__menu__icon'));
 		setNavbarContainer(document.querySelector('.navbar__container'));
 		setNavMenu(document.querySelector('.nav__menu'));
-	}, [hamburgerMenu, navbar, navbarContainer, navMenu]);
+
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, [hamburgerMenu, navbar, navbarContainer, navMenu, handleScroll]);
 
 	return (
 		<nav className='navbar'>

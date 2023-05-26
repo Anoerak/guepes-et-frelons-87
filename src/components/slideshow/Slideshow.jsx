@@ -14,18 +14,6 @@ const Slideshow = () => {
 	const delay = 5000;
 
 	useEffect(() => {
-		if (isError) {
-			console.log(errorMessage);
-		}
-
-		if (loading) {
-			console.log('Loading...');
-		}
-
-		if (data) {
-			console.log(data.length - 1);
-		}
-
 		if (data && slide < data.length - 1) {
 			setTimeout(() => setSlide(slide + 1), delay);
 		} else if (data && slide === data.length - 1) {

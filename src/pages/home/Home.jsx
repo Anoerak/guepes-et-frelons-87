@@ -109,6 +109,35 @@ function Home() {
 					</p>
 				</div>
 			</article>
+
+			<article className='article__row__3'>
+				<div className='left__side'>
+					<h3>Notre zone d’intervention</h3>
+					<p className='justify'>
+						La société de{' '}
+						<a title='désinfection 87' href='/desinfection'>
+							<strong>désinfection</strong>
+						</a>{' '}
+						et de{' '}
+						<a title='désinsectisation 87' href='/desinsectisation'>
+							<strong>désinsectisation</strong>
+						</a>{' '}
+						<strong>Guêpes et frelons 87</strong> opère dans un rayon de <strong>50 km</strong> autour de{' '}
+						<strong>Saint-Yrieix-la-Perche,</strong>&nbsp;en <strong>Haute-Vienne (87)</strong>.
+					</p>
+					<p>
+						Nous opérons à <strong>Limoges</strong>, en <strong>Dordogne</strong> et en{' '}
+						<strong>Corrèze</strong>.
+					</p>
+					<p>
+						Notre équipe intervient rapidement dans un délai qui ne dépasse pas les 48h. Aucun frais
+						supplémentaires ne vous seront facturé pour les interventions effectuées durant les dimanches et
+						les jours fériés.
+					</p>
+					<img src={require('@Images/Certibiocide.png')} alt='4_logos_about_ecology_certification' />
+				</div>
+				<div className='right__side'></div>
+			</article>
 		</section>
 	);
 }
