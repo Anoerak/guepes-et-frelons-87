@@ -30,7 +30,6 @@ const useFetch = (/** @type {string} */ path, /** @type {string} */ option) => {
 					const response = await axios.get(url + option);
 					setData(response);
 					const datas = response.data;
-					console.log(datas);
 					setData(datas);
 					setLoading(false);
 				} catch (error) {

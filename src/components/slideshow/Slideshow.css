@@ -1,0 +1,44 @@
+/* Slideshow */
+
+.slideshow {
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 100%;
+	position: relative;
+}
+.slideshowSlider {
+	white-space: nowrap;
+	transition: ease 1000ms;
+}
+
+.slide {
+	display: inline-block;
+	height: auto;
+	width: 100%;
+}
+
+.page__title {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 3rem;
+	bottom: 3rem;
+	left: 33%;
+	color: var(--secondary__color);
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 6rem;
+	box-shadow: 0 0 10px var(--secondary__color);
+	padding: 1rem 3rem;
+	cursor: default;
+}
+
+.page__title::after {
+	content: '';
+	position: absolute;
+	top: 110%;
+	margin: 0 auto;
+	width: 50%;
+	height: 1px;
+	background-color: var(--secondary__color);
+}

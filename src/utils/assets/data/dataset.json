@@ -61,27 +61,27 @@
 	"slideShowCollection": [
 		{
 			"id": 1,
-			"path": "./utils/assets/images/slide1.jpg",
+			"path": "slide1.jpg",
 			"alt": "Hornets on a nest."
 		},
 		{
 			"id": 2,
-			"path": "./utils/assets/images/slide2.jpg",
+			"path": "slide2.jpg",
 			"alt": "A man spreading product on a wall to remove lychen."
 		},
 		{
 			"id": 3,
-			"path": "./utils/assets/images/slide3.jpg",
+			"path": "slide3.jpg",
 			"alt": "A bee on a tree branch."
 		},
 		{
 			"id": 4,
-			"path": "./utils/assets/images/slide4.jpg",
+			"path": "slide4.jpg",
 			"alt": "A man dealing with hornets on a roof."
 		},
 		{
 			"id": 5,
-			"path": "./utils/assets/images/slide5.jpg",
+			"path": "slide5.jpg",
 			"alt": "A mouse approaching a house."
 		}
 	]

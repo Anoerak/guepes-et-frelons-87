@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import head_logo from '@Utils/assets/images/head-logo.png';
-import dataset from '@Utils/assets/data/dataset.json';
+import head_logo from '@Images/head-logo.png';
+import dataset from '@Data/dataset.json';
 
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -2,16 +2,17 @@
 	"compilerOptions": {
 		"checkJs": true,
 		"paths": {
+			"@App/*": ["app/*"],
 			"@Components/*": ["components/*"],
+			"@Features/*": ["features/*"],
+			"@Models/*": ["models/*"],
 			"@Pages/*": ["pages/*"],
 			"@Utils/*": ["utils/*"],
+			"@Hooks/*": ["utils/hooks/*"],
+			"@Styles/*": ["utils/styles/*"],
 			"@Assets/*": ["utils/assets/*"],
 			"@Data/*": ["utils/assets/data/*"],
-			"@Images/*": ["utils/assets/images/*"],
-			"@Styles/*": ["utils/styles/*"],
-			"@Hooks/*": ["utils/hooks/*"],
-			"@App/*": ["app/*"],
-			"@Features/*": ["features/*"]
+			"@Images/*": ["utils/assets/images/*"]
 		},
 		"jsx": "react",
 		"resolveJsonModule": true,

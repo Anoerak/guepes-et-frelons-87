@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import useFetch from '@Hooks/useFetch';
+import Slides from '@Models/slides/slides';
 
 import './Slideshow.css';
 
@@ -8,6 +9,9 @@ const Slideshow = () => {
 	const slidePathOption = 'slideShowCollection';
 
 	const [data, isError, loading, errorMessage] = useFetch(slidesPath, slidePathOption);
+
+	const [slide, setSlide] = React.useState(0);
+	const delay = 5000;
 
 	useEffect(() => {
 		if (isError) {
@@ -19,31 +23,50 @@ const Slideshow = () => {
 		}
 
 		if (data) {
-			console.log(data);
+			console.log(data.length - 1);
 		}
-	}, [data, isError, loading, errorMessage]);
+
+		if (data && slide < data.length - 1) {
+			setTimeout(() => setSlide(slide + 1), delay);
+		} else if (data && slide === data.length - 1) {
+			setTimeout(() => setSlide(0), delay);
+		}
+
+		return () => {};
+	}, [data, isError, loading, errorMessage, slide]);
 
 	return (
-		<section id='slideshow'>
-			<h1>Slideshow</h1>
-			<img src='../utils/assets/images/slide1.jpg' alt='mouse and men' />
-			{/* We check if it's loading then if there's an error and finally if it's ok, we display each picture (data[].path) with a slideshow */}
+		<div id='slideshow'>
 			{loading ? (
 				<p>Loading...</p>
 			) : isError ? (
 				<p>{errorMessage}</p>
 			) : (
 				<div className='slideshow'>
-					<div className='slideshowSlider'>
-						{data.map(
-							(/** @type {{ path: string; alt: string; }} */ slide, /** @type {React.Key} */ index) => {
-								return <img src={slide.path} key={index} className='slide' alt={slide.alt}></img>;
-							}
-						)}
+					<div className='slideshowSlider' style={{ transform: `translate3d(${-slide * 100}%, 0, 0)` }}>
+						{data.map((/** @type {{ id: any; path: string; alt: any; }} */ slide) => (
+							// @ts-ignore
+							<Slides
+								key={slide.id}
+								path={require('' + '@Images/' + slide.path)}
+								alt={slide.alt}
+								onClick={() => console.log('click')}
+								isDelete={false}
+								onDelete={() => console.log('delete')}
+								isEdit={false}
+								onEdit={() => console.log('edit')}
+								isAdd={false}
+								onAdd={() => console.log('add')}
+							/>
+						))}
+					</div>
+					<div className='page__title'>
+						Guêpes et Frelons
+						<span>87</span>
 					</div>
 				</div>
 			)}
-		</section>
+		</div>
 	);
 };
 
