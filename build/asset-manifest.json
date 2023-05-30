@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5fccdbf6.css",
+    "main.js": "/static/js/main.c5b55cf3.js",
+    "static/media/404_bg.jpg": "/static/media/404_bg.ed59b28e0db24469c9d2.jpg",
+    "static/media/slide2.jpg": "/static/media/slide2.9bec08958491a5462795.jpg",
+    "static/media/slide5.jpg": "/static/media/slide5.080f0f4a7c16c3ce14c2.jpg",
+    "static/media/home_page_last_element.jpg": "/static/media/home_page_last_element.d2a4c1104ca29afd57c8.jpg",
+    "static/media/wasps-bg.png": "/static/media/wasps-bg.4e3525d8e6605952ce49.png",
+    "static/media/Bees-bg.jpg": "/static/media/Bees-bg.498e4c40cf5d21df3eff.jpg",
+    "static/media/hornet_on_branch.jpg": "/static/media/hornet_on_branch.074ffd0b38b337719aac.jpg",
+    "static/media/red_wasp.jpg": "/static/media/red_wasp.d20985acd0d83e3d7726.jpg",
+    "static/media/pest_control_in_action.jpg": "/static/media/pest_control_in_action.4c516c4c14fc9710e237.jpg",
+    "static/media/header-yellow-bg.jpg": "/static/media/header-yellow-bg.e6a299664c8900dd68cb.jpg",
+    "static/media/slide3.jpg": "/static/media/slide3.da7a1e68e32dadc62cf3.jpg",
+    "static/media/slide1.jpg": "/static/media/slide1.846f7c71c932e4c698a7.jpg",
+    "static/media/header-bg.jpg": "/static/media/header-bg.f4376a02d67b17d3c441.jpg",
+    "static/media/slide4.jpg": "/static/media/slide4.da60d0e62eecc7c3799c.jpg",
+    "static/media/footer-bg.jpg": "/static/media/footer-bg.7419780101a0708bb31d.jpg",
+    "static/media/target_pickup.png": "/static/media/target_pickup.4d6cf57898f680cf570a.png",
+    "static/media/target_hornet.png": "/static/media/target_hornet.02da893e29e03f1549df.png",
+    "static/media/Certibiocide.png": "/static/media/Certibiocide.6514a1276ebaacd35b78.png",
+    "static/media/head-logo.png": "/static/media/head-logo.8c0cd1d24ff876a01978.png",
+    "index.html": "/index.html",
+    "main.5fccdbf6.css.map": "/static/css/main.5fccdbf6.css.map",
+    "main.c5b55cf3.js.map": "/static/js/main.c5b55cf3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fccdbf6.css",
+    "static/js/main.c5b55cf3.js"
+  ]
+}
