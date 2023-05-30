@@ -1,0 +1,59 @@
+section#not-found {
+	background-image: var(--404__bg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+section#not-found .not__found__content {
+	background-color: rgba(0, 0, 0, 0.73);
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.73);
+}
+
+section#not-found .not__found__content h1 {
+	font-size: 3rem;
+	color: var(--secondary__color);
+}
+section#not-found .not__found__content h2 {
+	font-size: 2rem;
+	color: var(--secondary__color);
+}
+section#not-found .not__found__content h3 {
+	font-size: 1.5rem;
+	color: var(--secondary__color);
+}
+
+section#not-found button {
+	background-color: var(--quaternary__color);
+	color: var(--main__color);
+	border: none;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	position: absolute;
+	bottom: 5rem;
+	transition: all 0.3s ease-in-out;
+}
+section#not-found button a {
+	text-decoration: none;
+	color: var(--main__color);
+}
+section#not-found button:hover {
+	background-color: var(--active__link);
+	box-shadow: 0 0 1rem 0.5rem var(--active__link);
+	transform: scale(1.1);
+}
+section#not-found button:hover > a,
+section#not-found button a:hover {
+	border: none;
+	color: var(--secondary__color);
+}

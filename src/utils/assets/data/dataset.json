@@ -29,8 +29,8 @@
 		},
 		{
 			"id": 3,
-			"title": "Dératisation",
-			"path": "/deratisation"
+			"title": "Récupération d'abeilles",
+			"path": "/recuperation-abeilles"
 		},
 		{
 			"id": 4,
@@ -39,21 +39,31 @@
 		},
 		{
 			"id": 5,
-			"title": "Traitements bois",
-			"path": "/traitements-bois"
+			"title": "Dératisation",
+			"path": "/deratisation"
 		},
 		{
 			"id": 6,
+			"title": "Dépigeonnage",
+			"path": "/depigeonnage"
+		},
+		{
+			"id": 7,
+			"title": "Piégeage",
+			"path": "/piegeage"
+		},
+		{
+			"id": 8,
+			"title": "Traitements bois-champignons",
+			"path": "/traitements-bois-champignons"
+		},
+		{
+			"id": 9,
 			"title": "Actualités",
 			"path": "/actualites"
 		},
 		{
-			"id": 7,
-			"title": "Devis",
-			"path": "/devis"
-		},
-		{
-			"id": 8,
+			"id": 10,
 			"title": "Contact",
 			"path": "/contact"
 		}

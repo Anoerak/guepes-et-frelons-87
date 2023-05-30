@@ -17,8 +17,10 @@
 	/* Background Images */
 	--bees__nest__bg: url('@Images/header-bg.jpg');
 	--pest__controller__bg: url('@Images/pest_control_in_action.jpg');
+	--hornet__on__branch__bg: url('@Images/hornet_on_branch.jpg');
 	--third__article__bg: url('@Images/red_wasp.jpg');
 	--fourth__article__bg: url('@Images/home_page_last_element.jpg');
+	--404__bg: url('@Images/404_bg.jpg');
 }
 
 body {

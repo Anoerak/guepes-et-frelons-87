@@ -34,8 +34,15 @@ form .wrap__rgpd {
 	align-items: flex-start;
 }
 
+form .wrap__rgpd a.legals__link {
+	color: var(--secondary__color);
+}
+form .wrap__rgpd a.legals__link:hover {
+	color: var(--active__link);
+}
 form .wrap__rgpd p {
 	margin: 0;
+	color: var(--secondary__color);
 }
 
 form .form__group .submit__button {

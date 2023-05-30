@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './FlyingBee.css';
 
@@ -32,5 +33,17 @@ function FlyingBee(props) {
 		</div>
 	);
 }
+
+// Validation for props
+FlyingBee.propTypes = {
+	title: PropTypes.string.isRequired,
+	subtitle: PropTypes.string.isRequired,
+};
+
+// Default props
+FlyingBee.defaultProps = {
+	title: 'Flying Bee',
+	subtitle: 'A flying bee',
+};
 
 export default FlyingBee;

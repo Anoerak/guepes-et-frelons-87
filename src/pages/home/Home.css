@@ -3,14 +3,14 @@ section#home {
 	width: 100%;
 }
 
-section#home a {
+section a {
 	color: var(--main__color);
 }
-section#home a:hover {
+section a:hover {
 	color: var(--active__link);
 }
 
-section#home article {
+section article {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -20,7 +20,7 @@ section#home article {
 	margin-top: 2rem;
 }
 
-section#home article > div {
+section article > div {
 	width: 50%;
 	height: 30rem;
 	max-width: 50%;
@@ -31,7 +31,7 @@ section#home article > div {
 section#home article.article__row__1 {
 	min-height: 45rem;
 	margin-top: 0;
-	background-image: linear-gradient(#46d0fd98, #ffffff98);
+	background-image: linear-gradient(#9ce6ff98, #ffffff98);
 }
 
 section#home article.article__row__2 {
@@ -47,7 +47,7 @@ section#home article.article__row__2 .right__side {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
 	padding: 0 1rem;
 	font-size: 1rem;
 	line-height: 1rem;
@@ -65,6 +65,7 @@ section#home article.article__row__2 .right__side ul {
 }
 section#home article.article__row__2 .right__side ul li {
 	margin: 0.5rem 0;
+	text-align: left;
 }
 
 section#home article.article__row__3 {

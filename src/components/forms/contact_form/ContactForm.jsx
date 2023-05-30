@@ -14,7 +14,6 @@ function ContactForm({ arg }) {
 	const [data, isError, loading, errorMessage] = useFetch(formPath, formPathOption);
 
 	useEffect(() => {
-		console.log('datas: ', data);
 		return () => {};
 	}, [data, isError, loading, errorMessage]);
 
@@ -64,7 +63,10 @@ function ContactForm({ arg }) {
 							utilisées par www.anti-nuisible87.fr pour me recontacter dans le cadre de ma demande. Les
 							destinataires sont www.anti-nuisible87.fr et seulement ce dernier. Pour plus d'informations
 							sur le traitement de vos données et l'exercice de vos droits, reportez-vous à notre{' '}
-							<a href='/mentions_legales'>politique de confidentialité</a>.
+							<a className='legals__link' href='/mentions_legales'>
+								politique de confidentialité
+							</a>
+							.
 						</p>
 					</div>
 					<div className='form__group'>
