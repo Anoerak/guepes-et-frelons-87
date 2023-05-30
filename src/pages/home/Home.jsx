@@ -3,20 +3,23 @@ import React from 'react';
 import TruckPicture from '@Images/target_pickup.png';
 import HornetPicture from '@Images/target_hornet.png';
 import Slideshow from '@Components/slideshow/Slideshow';
-
+import FlyingBee from '@Components/flyingBee/FlyingBee';
+import IntegratedForm from '@Components/forms/integrated_form/IntegratedForm';
 import './Home.css';
 
 function Home() {
 	return (
 		<section id='home'>
 			<Slideshow />
-			<h1>Société de désinsectisation, dératisation et désinfection près de Limoges (87)</h1>
-			<h2>Service de Piégeage et dépigeonnage </h2>
+			<FlyingBee
+				title='Société de désinsectisation, dératisation et désinfection près de Limoges (87)'
+				subtitle='Service de Piégeage et dépigeonnage '
+			/>
 
 			<article className='article__row__1'>
 				<div className='left__side'>
 					<p className='text'>
-						Vous avez subi une infestation d'insectes&nbsp; ? Vous voulez vous débarrasser de nuisibles ?{' '}
+						Vous avez subi une infestation d'insectes ? Vous voulez vous débarrasser de nuisibles ?{' '}
 						<strong>Guêpes et frelons 87</strong> la société de{' '}
 						<a title='désinsectisation Saint-Yrieix-la-Perche' href='/desinsectisation'>
 							<strong>désinsectisation,</strong>
@@ -134,10 +137,20 @@ function Home() {
 						supplémentaires ne vous seront facturé pour les interventions effectuées durant les dimanches et
 						les jours fériés.
 					</p>
-					<img src={require('@Images/Certibiocide.png')} alt='4_logos_about_ecology_certification' />
+
+					<img
+						// @ts-ignore
+						src={
+							// eslint-disable-next-line no-undef
+							require('@Images/Certibiocide.png')
+						}
+						alt='4_logos_about_ecology_certification'
+					/>
 				</div>
 				<div className='right__side'></div>
 			</article>
+
+			<IntegratedForm />
 		</section>
 	);
 }

@@ -5,6 +5,7 @@
 	--secondary__color: #fff;
 	--tertiary__color: #e5f386;
 	--quaternary__color: #f5de81;
+	--blue__sky: #00bfff98;
 	/* Alerts */
 	--danger__color: #ff0000;
 	--warning__color: #ffae00;
@@ -17,6 +18,7 @@
 	--bees__nest__bg: url('@Images/header-bg.jpg');
 	--pest__controller__bg: url('@Images/pest_control_in_action.jpg');
 	--third__article__bg: url('@Images/red_wasp.jpg');
+	--fourth__article__bg: url('@Images/home_page_last_element.jpg');
 }
 
 body {

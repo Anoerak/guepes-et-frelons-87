@@ -1,31 +1,56 @@
-/* Css for the ContactForm.jsx component */
-
-.Contact__Form {
+form {
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	width: 100%;
+	justify-content: space-around;
+}
+form .form__group,
+form .form__group input {
+	width: 75%;
+}
+form .form__group input {
+	border: 1px solid var(--main__color);
+	border-radius: 0.25rem;
+	padding: 0.25rem;
+	margin: 0;
+	height: 1.5rem;
+}
+form .form__group textarea {
+	border: 1px solid var(--main__color);
+	border-radius: 0.25rem;
+	padding: 0.25rem;
+	margin: 0;
+}
+form .form__group input:focus,
+form .form__group textarea:focus {
+	border: 1px solid var(--active__link);
+	outline: 1px solid var(--active__link);
+	box-shadow: 0 0 0.5rem var(--active__link);
 }
 
-.Contact__Form__Input {
-	width: 100%;
-	margin: 0.5rem 0;
-	padding: 0.5rem;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	font-size: 1rem;
+form .wrap__rgpd {
+	display: flex;
+	align-items: flex-start;
 }
 
-.Contact__Form__Input:focus {
-	outline: none;
-	border: 1px solid #000;
+form .wrap__rgpd p {
+	margin: 0;
 }
 
-.Contact__Form__Input::placeholder {
-	font-size: 1rem;
+form .form__group .submit__button {
+	width: 50%;
+	height: 2rem;
+	border: 1px solid var(--active__link);
+	border-radius: 0.25rem;
+	background-color: var(--active__link);
+	color: var(--secondary__color);
+	font-weight: bold;
+	transition: all 0.35s ease-in-out;
 }
-
-.Contact__Form__Input--Message {
-	height: 10rem;
+form .form__group .submit__button:hover {
+	background-color: filter(var(--active__link), brightness(0.2));
+	color: var(--active__link);
+	box-shadow: 0 0 0.5rem var(--active__link);
+	cursor: pointer;
 }

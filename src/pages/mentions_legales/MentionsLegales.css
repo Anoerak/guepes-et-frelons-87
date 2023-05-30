@@ -1,0 +1,83 @@
+#center_column {
+	text-align: center;
+}
+
+#rubric_title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#content_pages {
+	margin-top: 20px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-sm-4 {
+	flex: 0 0 33.3333333333%;
+	max-width: 33.3333333333%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col-sm-12 {
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+#infoclient,
+#hebergeur {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#infoclient strong,
+#hebergeur strong {
+	font-weight: bold;
+}
+
+#infoclient abbr,
+#hebergeur abbr {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+#credits ul {
+	padding-left: 0;
+}
+
+#credits li {
+	list-style-type: none;
+}
+
+#texte_mentions_legales {
+	margin-top: 20px;
+}
+
+.right {
+	text-align: right;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.puce {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}

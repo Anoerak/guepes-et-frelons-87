@@ -38,19 +38,20 @@
 
 .navbar .navbar__container .nav__menu.scroll__header {
 	position: fixed;
-	background-color: rgba(0, 0, 0, 0.6);
 	/* top: 1rem; */
-	border-radius: 1rem;
 	transform: translateY(1rem);
 	transition: all 0.75s ease-in-out;
 }
 .navbar .navbar__container .nav__menu {
-	list-style-type: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	list-style-type: none;
+	border-radius: 1rem;
 	padding: 1rem;
 	margin-top: -0.5rem;
+	transition: all 0.375s ease-in-out;
 }
 
 .navbar .navbar__container .nav__menu li {
@@ -86,7 +87,7 @@
 	margin: 0 10px;
 	padding: 10px 0;
 	border-bottom: 2px solid transparent;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.35s ease-in-out;
 }
 
 .nav__links:hover,

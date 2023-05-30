@@ -1,12 +1,9 @@
 footer {
 	background-image: url('~/src/utils/assets/images/header-bg.jpg');
-	/* background-image: url('../../utils/assets/images/footer-bg.jpg'); */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	border-top: 1px solid #ddd;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-	margin-top: 1rem;
+	box-shadow: 0 0 10px var(--tertiary__color);
 	z-index: 99;
 	padding: 20px 20px 0 20px;
 	text-align: center;
@@ -14,8 +11,6 @@ footer {
 	font-weight: 300;
 	line-height: 1.5;
 	bottom: 0;
-
-	/* display: none; */
 }
 
 footer .footer__container {
@@ -24,7 +19,7 @@ footer .footer__container {
 	justify-content: space-around;
 	height: 225px;
 	position: relative;
-	/* height: 100%; */
+	height: 100%;
 	width: 100%;
 	margin-bottom: 2rem;
 }
@@ -42,70 +37,17 @@ footer .footer__container .footer__content .footer__content__left {
 	display: flex;
 	flex-direction: column;
 }
-
 footer .footer__container .footer__content .footer__content__left .footer__content__left__logo {
 	display: flex;
 	align-items: center;
 	max-width: 200px;
 }
-
 footer .footer__container .footer__content .footer__content__left .footer__content__left__text p {
 	color: var(--secondary__color);
 }
-
 footer .footer__container .footer__content .footer__content__left .footer__content__left__logo a img {
 	width: 100%;
 }
-
-/* footer .footer__container .footer__content .footer__content__center {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-footer .footer__container .footer__content .footer__content__center h2,
-footer .footer__container .footer__content .footer__content__right h2 {
-	margin: 0 0 10px 0;
-	font-size: 1.5rem;
-	color: var(--tertiary__color);
-} */
-
-footer .footer__container .footer__content .footer__content__right h3 {
-	color: var(--active__link);
-}
-
-footer .footer__container .footer__content .footer__content__right h3 ~ a {
-	color: var(--secondary__color);
-	text-decoration: none;
-}
-
-/* footer .footer__container .footer__content .footer__content__center ul {
-	list-style: none;
-	padding: 10px;
-	column-count: 2;
-	column-gap: 20px;
-}
-
-footer .footer__container .footer__content .footer__content__center ul li {
-	margin-bottom: 10px;
-}
-
-footer .footer__container .footer__content .footer__content__center ul li:hover {
-	filter: drop-shadow(0 0 0.75rem var(--active__link));
-	transition: all 0.4s ease-in-out;
-}
-
-footer .footer__container .footer__content .footer__content__center ul li a {
-	color: var(--secondary__color);
-	text-decoration: none;
-}
-
-footer .footer__container .footer__content .footer__content__center ul li .nav__links:hover,
-a:hover {
-	color: var(--tertiary__color);
-	opacity: 1;
-	transition: all 0.4s ease-in-out;
-} */
 
 footer .footer__container .footer__content .footer__content__right {
 	display: flex;
@@ -115,31 +57,26 @@ footer .footer__container .footer__content .footer__content__right {
 	line-height: normal;
 	margin: 0;
 }
-
-footer .footer__container .footer__content .footer__content__right .svg-inline--fa {
-	margin-right: 1rem;
-	color: var(--tertiary__color);
-}
-
-footer .footer__container .footer__content .footer__content__right .footer__content__right__contact__title {
-	margin: 0;
+footer .footer__container .footer__content .footer__content__right h2 {
 	color: var(--secondary__color);
 }
 
-footer .footer__container .footer__content .footer__content__right .footer__content__right__contact__text {
-	margin: 0;
-	color: var(--secondary__color);
-}
-
-footer
-	.footer__container
-	.footer__content
-	.footer__content__right
-	.footer__content__right__contact__text
-	.direct__contact {
+footer .footer__container .footer__content .footer__content__right .direct__contact {
 	display: flex;
 	flex-direction: row;
 	gap: 3rem;
+}
+footer .footer__container .footer__content .footer__content__right .direct__contact h3 {
+	color: var(--active__link);
+}
+footer .footer__container .footer__content .footer__content__right .direct__contact h3 ~ a,
+footer .footer__container .footer__content .footer__content__right .direct__contact h3 ~ p {
+	color: var(--secondary__color);
+	text-decoration: none;
+}
+footer .footer__container .footer__content .footer__content__right .direct__contact .svg-inline--fa {
+	margin-right: 1rem;
+	color: var(--tertiary__color);
 }
 
 footer .footer__bottom {
@@ -147,8 +84,6 @@ footer .footer__bottom {
 	margin: 0 -20px;
 	padding: 0 20px;
 	width: 100%;
-	/* background-image: url('~/src/utils/assets/images/header-bg.jpg'); */
-	/* background-color: black; */
 	background-color: transparent;
 	color: var(--secondary__color);
 	bottom: -20px;

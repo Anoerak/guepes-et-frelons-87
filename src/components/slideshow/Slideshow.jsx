@@ -36,6 +36,7 @@ const Slideshow = () => {
 							// @ts-ignore
 							<Slides
 								key={slide.id}
+								// eslint-disable-next-line no-undef
 								path={require('' + '@Images/' + slide.path)}
 								alt={slide.alt}
 								onClick={() => console.log('click')}

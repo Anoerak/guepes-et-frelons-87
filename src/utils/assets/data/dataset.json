@@ -25,7 +25,7 @@
 		{
 			"id": 2,
 			"title": "Désinsectisation",
-			"path": "/desinsectisations"
+			"path": "/desinsectisation"
 		},
 		{
 			"id": 3,
@@ -83,6 +83,50 @@
 			"id": 5,
 			"path": "slide5.jpg",
 			"alt": "A mouse approaching a house."
+		}
+	],
+	"contactForm": [
+		{
+			"name": "name",
+			"id": "name",
+			"label": "Nom",
+			"placeholder": "Votre nom",
+			"type": "text",
+			"required": true
+		},
+		{
+			"name": "firstname",
+			"id": "firstname",
+			"label": "Prénom",
+			"placeholder": "Votre prénom",
+			"type": "text",
+			"required": true
+		},
+		{
+			"name": "email",
+			"id": "email",
+			"label": "Email",
+			"placeholder": "Votre email",
+			"type": "email",
+			"required": true
+		},
+		{
+			"name": "phone",
+			"id": "phone",
+			"label": "Téléphone",
+			"placeholder": "Votre téléphone",
+			"type": "tel",
+			"required": false
+		},
+		{
+			"name": "message",
+			"id": "message",
+			"label": "Message",
+			"placeholder": "Votre message",
+			"type": "textarea",
+			"cols": "45",
+			"rows": "7",
+			"required": true
 		}
 	]
 }
