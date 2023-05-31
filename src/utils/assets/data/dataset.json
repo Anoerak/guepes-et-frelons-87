@@ -2,7 +2,7 @@
 	"Company": {
 		"name": "Guêpes Frelons 87",
 		"siret": "00000000000000",
-		"logo": "../images/logo.png",
+		"logo": "@Images/logo.png",
 		"website": "https://guepes-frelons87.fr"
 	},
 	"contactInfos": {

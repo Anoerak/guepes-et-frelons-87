@@ -1,9 +1,10 @@
+/* eslint-disable no-undef */
 import React, { useCallback, useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import head_logo from '@Images/head-logo.png';
-import dataset from '@Data/dataset.json';
+import useFetchJson from '@Utils/hooks/useFetchJson';
 
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,6 +16,7 @@ function Header() {
 	const [hamburgerMenu, setHamburgerMenu] = useState(null);
 	const [navbarContainer, setNavbarContainer] = useState(null);
 	const [navMenu, setNavMenu] = useState(null);
+	const [dataset, isError, loading, errorMessage] = useFetchJson(process.env.REACT_APP_API_URL, 'navbarLinks');
 
 	function mobileMenu() {
 		if (hamburgerMenu.classList.contains('active')) {
@@ -58,22 +60,30 @@ function Header() {
 					<img src={head_logo} alt='logo-wasp-targeted' />
 				</Link>
 				<ul className='nav__menu'>
-					{dataset.navbarLinks.map((item) => {
-						return (
-							<li key={item.id}>
-								<Link
-									to={item.path}
-									className={'nav__links ' + (activeId === item.id ? ' active' : '')}
-									onClick={() => {
-										setActiveId(item.id);
-										mobileMenu();
-									}}
-								>
-									{item.title}
-								</Link>
-							</li>
-						);
-					})}
+					{loading ? (
+						<p>Loading...</p>
+					) : isError ? (
+						<p>{errorMessage}</p>
+					) : (
+						<>
+							{dataset.map((item) => {
+								return (
+									<li key={item.id}>
+										<Link
+											to={item.path}
+											className={'nav__links ' + (activeId === item.id ? ' active' : '')}
+											onClick={() => {
+												setActiveId(item.id);
+												mobileMenu();
+											}}
+										>
+											{item.title}
+										</Link>
+									</li>
+								);
+							})}
+						</>
+					)}
 				</ul>
 				<FontAwesomeIcon
 					onClick={() => {

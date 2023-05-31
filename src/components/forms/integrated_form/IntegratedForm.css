@@ -21,17 +21,25 @@ article.article__row__4 .left__side {
 }
 
 article.article__row__4 .right__side {
-	width: 50%;
-	max-width: 50%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
-	max-height: 100%;
-	height: 100%;
+	justify-content: space-evenly;
 	padding: 0 1rem;
 	font-size: 1rem;
+
+	color: var(--secondary__color);
+	width: 50%;
+	max-width: 50%;
+	max-height: 100%;
+	height: 100%;
 	line-height: 1.25rem;
+}
+
+article.article__row__4 .right__side h3 {
+	font-size: 2rem;
+	color: var(--secondary__color);
+	margin-bottom: 2rem;
 }
 
 article.article__row__4 .right__side fieldset {

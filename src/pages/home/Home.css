@@ -30,8 +30,18 @@ section article > div {
 
 section#home article.article__row__1 {
 	min-height: 45rem;
-	margin-top: 0;
+	margin: 0 2rem;
 	/* background-image: linear-gradient(#9ce6ff98, #ffffff98); */
+}
+section#home article.article__row__1 > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+section#home article.article__row__1 .left__side .text,
+section#home article.article__row__1 .right__side .text {
+	text-align: justify;
 }
 
 section#home article.article__row__2 {
@@ -43,16 +53,17 @@ section#home article.article__row__2 .left__side {
 	background-size: cover;
 	background-position: center;
 }
-section#home article.article__row__2 .right__side {
+section#home article.article__row__2 .right__side,
+section#home article.article__row__3 .left__side {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: 0 1rem;
 	font-size: 1rem;
-	line-height: 1rem;
 }
-section#home article.article__row__2 .right__side h3 {
+section#home article.article__row__2 .right__side h3,
+section#home article.article__row__3 .left__side h3 {
 	font-family: 'Sawarabi Gothic';
 	color: var(--tertiary__color);
 	font-size: 2rem;
@@ -61,11 +72,24 @@ section#home article.article__row__2 .right__side a {
 	color: var(--secondary__color);
 }
 section#home article.article__row__2 .right__side ul {
+	width: 70%;
 	list-style-image: url('@Images/list_style_image.png');
 }
 section#home article.article__row__2 .right__side ul li {
 	margin: 0.5rem 0;
 	text-align: left;
+}
+section#home article.article__row__2 .right__side p,
+section#home article.article__row__3 .left__side p {
+	width: 90%;
+}
+section#home article.article__row__2 .right__side p.top,
+section#home article.article__row__2 .right__side p.bottom {
+	text-align: left;
+	width: 90%;
+}
+section#home article.article__row__2 .right__side p.bottom {
+	margin-top: 0;
 }
 
 section#home article.article__row__3 {
@@ -80,14 +104,14 @@ section#home article.article__row__3 .right__side {
 	background-position: center;
 }
 section#home article.article__row__3 .left__side {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-	padding: 0 1rem;
-	font-size: 1rem;
-	line-height: 1.25rem;
+	line-height: 2rem;
+	padding-top: 3rem;
+}
+section#home article.article__row__3 .left__side h3 {
+	color: var(--main__color);
+	margin-bottom: 1rem;
 }
 section#home article.article__row__3 .left__side img {
-	max-width: 80%;
+	max-width: 90%;
+	margin-top: -2rem;
 }

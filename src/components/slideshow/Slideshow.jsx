@@ -1,14 +1,14 @@
+/* eslint-disable no-undef */
 import React, { useEffect } from 'react';
-import useFetch from '@Hooks/useFetch';
+import useFetchJson from '@Hooks/useFetchJson';
 import Slides from '@Models/slides/slides';
 
 import './Slideshow.css';
 
 const Slideshow = () => {
-	const slidesPath = 'http://localhost:8080/';
 	const slidePathOption = 'slideShowCollection';
 
-	const [data, isError, loading, errorMessage] = useFetch(slidesPath, slidePathOption);
+	const [data, isError, loading, errorMessage] = useFetchJson(process.env.REACT_APP_API_URL, slidePathOption);
 
 	const [slide, setSlide] = React.useState(0);
 	const delay = 5000;
@@ -50,7 +50,7 @@ const Slideshow = () => {
 						))}
 					</div>
 					<div className='page__title'>
-						Guêpes et Frelons
+						Guêpes & Frelons
 						<span>87</span>
 					</div>
 				</div>

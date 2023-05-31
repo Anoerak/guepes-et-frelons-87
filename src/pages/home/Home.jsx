@@ -6,10 +6,11 @@ import HornetPicture from '@Images/target_hornet.png';
 import Slideshow from '@Components/slideshow/Slideshow';
 import FlyingBee from '@Components/flyingBee/FlyingBee';
 import IntegratedForm from '@Components/forms/integrated_form/IntegratedForm';
+
 import './Home.css';
 
 function Home() {
-	useTitle('Guêpes et frelons 87 | Accueil');
+	useTitle('Guêpes & Frelons 87 | Accueil');
 
 	return (
 		<section id='home'>
@@ -21,11 +22,11 @@ function Home() {
 			<article className='article__row__1'>
 				<div className='left__side'>
 					<p className='text'>
-						Vous avez subi une infestation d'insectes ? Vous voulez vous débarrasser de nuisibles ?{' '}
-						<strong>Guêpes et frelons 87</strong> la société de{' '}
+						Vous avez subi une infestation d'insectes ? Vous voulez vous débarrasser de nuisibles ?<br />
+						<strong>Guêpes & Frelons 87</strong> la société de{' '}
 						<a title='désinsectisation Saint-Yrieix-la-Perche' href='/desinsectisation'>
 							<strong>désinsectisation,</strong>
-						</a>
+						</a>{' '}
 						<a title='dératisation Saint-Yrieix-la-Perche' href='/deratisation'>
 							<strong>dératisation</strong>
 						</a>{' '}
@@ -33,7 +34,8 @@ function Home() {
 						<strong>
 							<a href='/desinfection'>désinfection</a>
 						</strong>{' '}
-						à <strong>Saint-Yrieix-la-Perche</strong> près de <strong>Limoges</strong> en{' '}
+						à <br />
+						<strong>Saint-Yrieix-la-Perche</strong> près de <strong>Limoges</strong> en{' '}
 						<strong>Haute-Vienne (87)</strong> est à votre disposition.
 					</p>
 					<img src={TruckPicture} alt='A_target_aiming_a_pickup_truck_with_the_company_branding' />
@@ -41,9 +43,10 @@ function Home() {
 				<div className='right__side'>
 					<img src={HornetPicture} alt='A_target_aiming_at_a_hornet' />
 					<p className='text'>
-						Nous mettons à votre disposition une équipe de professionnels expérimentés. Nos experts
-						s'engagent à préserver l’écosystème avec des techniques et des produits respectueux de la faune
-						et la flore.
+						Nous mettons à votre disposition une équipe de professionnels expérimentés.
+						<br />
+						Nos experts s'engagent à préserver l’écosystème avec des techniques et des produits respectueux
+						de la faune et la flore.
 					</p>
 				</div>
 			</article>
@@ -52,8 +55,8 @@ function Home() {
 				<div className='left__side'></div>
 				<div className='right__side'>
 					<h3>Des services variés</h3>
-					<p>
-						<strong>Guêpes et frelons 87</strong> est une société expérimentée qui vous propose des services
+					<p className='top'>
+						<strong>Guêpes & Frelons 87</strong> est une société expérimentée qui vous propose des services
 						diversifiés :
 					</p>
 					<ul className='liste-puce1'>
@@ -69,7 +72,7 @@ function Home() {
 						</li>
 						<li>
 							<a title='recuperation essaim abeille Haute-vienne' href='/recuperation-d-abeilles'>
-								Récupération d'abeille
+								Récupération d'abeilles
 							</a>
 						</li>
 						<li>
@@ -97,11 +100,11 @@ function Home() {
 						</li>
 						<li>Détaupage</li>
 					</ul>
-					<p>
+					<p className='bottom'>
 						<br />
-						Pour bénéficier de notre expérience et notre savoir-faire, <br />
-						contactez-nous au{' '}
+						Pour bénéficier de notre expérience et notre savoir-faire, contactez-nous au{' '}
 						<strong>
+							<br />
 							<a href='tel:0564172145' className='phone_link phone_google'>
 								05 64 17 21 45
 							</a>
@@ -117,7 +120,7 @@ function Home() {
 
 			<article className='article__row__3'>
 				<div className='left__side'>
-					<h3>Notre zone d’intervention</h3>
+					<h3>Notre zone d{"'"}intervention</h3>
 					<p className='justify'>
 						La société de{' '}
 						<a title='désinfection 87' href='/desinfection'>
@@ -127,8 +130,8 @@ function Home() {
 						<a title='désinsectisation 87' href='/desinsectisation'>
 							<strong>désinsectisation</strong>
 						</a>{' '}
-						<strong>Guêpes et frelons 87</strong> opère dans un rayon de <strong>50 km</strong> autour de{' '}
-						<strong>Saint-Yrieix-la-Perche,</strong>&nbsp;en <strong>Haute-Vienne (87)</strong>.
+						<strong>Guêpes & Frelons 87</strong> opère dans un rayon de <strong>50 km</strong> autour de{' '}
+						<strong>Saint-Yrieix-la-Perche (Haute-Vienne 87)</strong>.
 					</p>
 					<p>
 						Nous opérons à <strong>Limoges</strong>, en <strong>Dordogne</strong> et en{' '}
@@ -136,8 +139,8 @@ function Home() {
 					</p>
 					<p>
 						Notre équipe intervient rapidement dans un délai qui ne dépasse pas les 48h. Aucun frais
-						supplémentaires ne vous seront facturé pour les interventions effectuées durant les dimanches et
-						les jours fériés.
+						supplémentaires ne vous seront facturés pour les interventions effectuées durant les dimanches
+						et les jours fériés.
 					</p>
 
 					<img

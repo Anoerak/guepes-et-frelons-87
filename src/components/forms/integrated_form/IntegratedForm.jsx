@@ -8,8 +8,10 @@ function IntegratedForm() {
 		<article className='article__row__4'>
 			<div className='left__side'></div>
 			<div className='right__side'>
-				<h3>Plus d'informations ?</h3>
-				<p>Vous avez des questions, souhaitez obtenir des informations ou recevoir un devis ?</p>
+				<div className='title'>
+					<h3>Plus d'informations ?</h3>
+					<p>Vous avez des questions, souhaitez obtenir des informations ou recevoir un devis ?</p>
+				</div>
 				<fieldset>
 					<legend>Contactez-nous</legend>
 					<ContactForm arg='contactForm' />

@@ -1,15 +1,18 @@
+/* eslint-disable no-undef */
 import React from 'react';
 
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-import dataset from '@Utils/assets/data/dataset.json';
+import useFetchJson from '@Utils/hooks/useFetchJson';
 import head_logo from '@Utils/assets/images/head-logo.png';
 
 import './Footer.css';
 
 function Footer() {
+	const [dataset] = useFetchJson(process.env.REACT_APP_API_URL, 'contactInfos');
+	console.log(dataset);
 	return (
 		<footer>
 			<div className='footer__container'>
@@ -33,9 +36,9 @@ function Footer() {
 									Adresse
 								</h3>
 								<p>
-									{dataset.contactInfos.address}
+									{dataset.address}
 									<br />
-									{dataset.contactInfos.zipCode} {dataset.contactInfos.city}
+									{dataset.zipCode} {dataset.city}
 								</p>
 							</div>
 							<div className='phone'>
@@ -43,14 +46,14 @@ function Footer() {
 									<FontAwesomeIcon icon={faPhone} />
 									Téléphone
 								</h3>
-								<a href='tel:+337604013'>{dataset.contactInfos.phone}</a>
+								<a href='tel:+337604013'>{dataset.phone}</a>
 							</div>
 							<div className='mail'>
 								<h3>
 									<FontAwesomeIcon icon={faPaperPlane} />
 									Email
 								</h3>
-								<a href='mailto:guepes.frelons87@gmail.com'>{dataset.contactInfos.email}</a>
+								<a href='mailto:guepes.frelons87@gmail.com'>{dataset.email}</a>
 							</div>
 						</div>
 					</div>

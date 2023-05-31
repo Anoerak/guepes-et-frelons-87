@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import useFetch from '@Hooks/useFetch';
+import useFetchJson from '@Hooks/useFetchJson';
 
 import './ContactForm.css';
 
@@ -8,10 +9,10 @@ import './ContactForm.css';
  * @param {any} arg
  */
 function ContactForm({ arg }) {
-	const formPath = 'http://localhost:8080/';
+	const formPath = process.env.REACT_APP_API_URL;
 	const formPathOption = arg;
 
-	const [data, isError, loading, errorMessage] = useFetch(formPath, formPathOption);
+	const [data, isError, loading, errorMessage] = useFetchJson(formPath, formPathOption);
 
 	useEffect(() => {
 		return () => {};
