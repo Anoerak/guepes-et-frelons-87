@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7257ae62.css",
-    "main.js": "/static/js/main.1c299254.js",
+    "main.css": "/static/css/main.69b24753.css",
+    "main.js": "/static/js/main.5985d1a8.js",
     "static/media/404_bg.jpg": "/static/media/404_bg.ed59b28e0db24469c9d2.jpg",
     "static/media/slide2.jpg": "/static/media/slide2.9bec08958491a5462795.jpg",
     "static/media/slide5.jpg": "/static/media/slide5.080f0f4a7c16c3ce14c2.jpg",
@@ -23,16 +23,20 @@
     "static/media/header-bg.jpg": "/static/media/header-bg.f4376a02d67b17d3c441.jpg",
     "static/media/slide4.jpg": "/static/media/slide4.da60d0e62eecc7c3799c.jpg",
     "static/media/section-bg.jpg": "/static/media/section-bg.7419780101a0708bb31d.jpg",
+    "static/media/instagram-logo.png": "/static/media/instagram-logo.e6fc9a0816b3cc8ee915.png",
     "static/media/target_pickup.png": "/static/media/target_pickup.4d6cf57898f680cf570a.png",
     "static/media/target_hornet.png": "/static/media/target_hornet.02da893e29e03f1549df.png",
     "static/media/Certibiocide.png": "/static/media/Certibiocide.6514a1276ebaacd35b78.png",
+    "static/media/facebook-logo.png": "/static/media/facebook-logo.7ef2feb80951818ac952.png",
     "static/media/head-logo.png": "/static/media/head-logo.8c0cd1d24ff876a01978.png",
+    "static/media/email-logo.png": "/static/media/email-logo.ff09f30a3f49f573ec57.png",
+    "static/media/phone-logo.png": "/static/media/phone-logo.68fd5e701a6894ba5e7e.png",
     "index.html": "/index.html",
-    "main.7257ae62.css.map": "/static/css/main.7257ae62.css.map",
-    "main.1c299254.js.map": "/static/js/main.1c299254.js.map"
+    "main.69b24753.css.map": "/static/css/main.69b24753.css.map",
+    "main.5985d1a8.js.map": "/static/js/main.5985d1a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.7257ae62.css",
-    "static/js/main.1c299254.js"
+    "static/css/main.69b24753.css",
+    "static/js/main.5985d1a8.js"
   ]
 }

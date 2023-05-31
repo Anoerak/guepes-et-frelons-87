@@ -9,3 +9,64 @@
 section {
 	background-image: var(--section-bg);
 }
+
+.App #social-medias-links {
+	z-index: 100;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	left: 0;
+	bottom: 1rem;
+	height: auto;
+	width: 3rem;
+	border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.App #social-medias-links a {
+	padding: 0.25rem;
+	width: 2rem;
+	border-radius: 0 0.5rem 0.5rem 0;
+	transition: all 0.3s ease-in-out;
+}
+.App #social-medias-links a:hover {
+	text-decoration: none;
+	border: none;
+	width: 6rem;
+}
+.App #social-medias-links a:nth-child(1) {
+	background-color: var(--blue__facebook);
+}
+.App #social-medias-links a:nth-child(1):hover {
+	filter: drop-shadow(0 0 0.5rem var(--blue__facebook));
+}
+.App #social-medias-links a:nth-child(2) {
+	background-color: var(--pink__instagram);
+}
+.App #social-medias-links a:nth-child(2):hover {
+	filter: drop-shadow(0 0 0.5rem var(--pink__instagram));
+}
+.App #social-medias-links a:nth-child(3) {
+	background-color: var(--blue__mail);
+}
+.App #social-medias-links a:nth-child(3):hover {
+	filter: drop-shadow(0 0 0.5rem var(--blue__mail));
+}
+.App #social-medias-links a:nth-child(4) {
+	background-color: var(--green__phone);
+}
+.App #social-medias-links a:nth-child(4):hover {
+	filter: drop-shadow(0 0 0.5rem var(--green__phone));
+}
+.App #social-medias-links a img {
+	width: 2rem;
+}
+
+@keyframes slideOutFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}

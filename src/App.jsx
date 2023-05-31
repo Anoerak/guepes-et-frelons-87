@@ -17,6 +17,11 @@ import Piegeage from '@Pages/piegeage/Piegeage';
 import RecuperationAbeilles from '@Pages/récupération_abeilles/RecuperationAbeilles';
 import TraitementBois from '@Pages/traitement_bois/TraitementBoisChampi';
 
+import FacebookLogo from '@Images/facebook-logo.png';
+import InstagramLogo from '@Images/instagram-logo.png';
+import PhoneLogo from '@Images/phone-logo.png';
+import EmailLogo from '@Images/email-logo.png';
+
 import '@Utils/styles/App.css';
 
 export const Layout = () => {
@@ -48,6 +53,24 @@ function App() {
 				</Route>
 				<Route path='*' element={<NotFound />} />
 			</Routes>
+			<div id='social-medias-links'>
+				<a
+					href='https://www.facebook.com/people/Gu%C3%AApes-Frelons-87/100063539562426/'
+					target='_blank'
+					rel='noreferrer'
+				>
+					<img src={FacebookLogo} alt='facebook' />
+				</a>
+				<a href='https://www.instagram.com/lerucherdenoah/?hl=fr' target='_blank' rel='noreferrer'>
+					<img src={InstagramLogo} alt='instagram' />
+				</a>
+				<a href='mailto:contact@anti-nuisibles87.fr' target='_blank' rel='noreferrer'>
+					<img src={EmailLogo} alt='email' />
+				</a>
+				<a href='tel:+337 60 40 13 48' target='_blank' rel='noreferrer'>
+					<img src={PhoneLogo} alt='phone' />
+				</a>
+			</div>
 		</div>
 	);
 }
