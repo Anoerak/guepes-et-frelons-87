@@ -19,8 +19,26 @@ section#not-found .not__found__content {
 }
 
 section#not-found .not__found__content h1 {
-	font-size: 3rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	text-align: top;
+	font-size: 4rem;
 	color: var(--secondary__color);
+}
+section#not-found .not__found__content h1 .vertical__text {
+	display: flex;
+	flex-direction: column;
+	margin: 0 1rem;
+}
+section#not-found .not__found__content h1 .vertical__text h1 {
+	margin: 0;
+	margin-top: 1rem;
+}
+section#not-found .not__found__content h1 .vertical__text span {
+	font-size: 2rem;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
 }
 section#not-found .not__found__content h2 {
 	font-size: 2rem;

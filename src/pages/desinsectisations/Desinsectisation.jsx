@@ -1,25 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import useTitle from '@Utils/hooks/useTitle';
 
 import IntegratedForm from '@Components/forms/integrated_form/IntegratedForm';
 
 import './Desinsectisation.css';
 
 function Desinsectisation() {
-	useEffect(() => {
-		const jsFile = './bugsOnTheLoose.js';
-		const script = document.createElement('script');
-		script.src = jsFile;
-		script.async = true;
-		document.head.appendChild(script);
-
-		// When the component is unmounted, clean up
-		return () => {
-			document.head.removeChild(script);
-			document.querySelectorAll('.bug').forEach((bug) => {
-				bug.remove();
-			});
-		};
-	}, []);
+	useTitle('G&F87 | Desinsectisation');
 
 	return (
 		<section id='desinsectisation'>

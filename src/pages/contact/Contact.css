@@ -1,0 +1,120 @@
+section#contact {
+	min-height: 90vh;
+	width: 100%;
+	background: none;
+}
+
+section#contact h1,
+h2,
+h3 {
+	font-family: 'Sawarabi Gothic';
+	color: var(--main__color);
+	margin: 0;
+}
+section#contact h1 {
+	font-size: 2rem;
+	margin-top: 2rem;
+	color: var(--danger__color);
+}
+section#contact h2 {
+	font-size: 1.8rem;
+}
+
+section#contact main {
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+section#contact main article {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+section#contact main article h3 {
+	color: var(--danger__color);
+	font-size: 1.75rem;
+	font-style: italic;
+	font-weight: 500;
+	font-family: 'Sawarabi Gothic';
+}
+
+section#contact main article.left__side form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.25rem;
+	height: 80%;
+}
+section#contact main article.left__side form .form__group {
+	padding: 1rem;
+	background-color: var(--quinary__color);
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+section#contact main article.left__side form .form__group input,
+section#contact main article.left__side form .form__group textarea {
+	border: none;
+	outline: none;
+	width: 95%;
+	height: 2rem;
+}
+section#contact main article.left__side form .form__group textarea {
+	height: 10rem;
+}
+section#contact main article.left__side form .form__group input.submit__button {
+	width: 50%;
+	height: 2rem;
+	border: none;
+	outline: none;
+	border-radius: 0.5rem;
+	background-color: var(--active__link);
+	color: var(--secondary__color);
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	font-family: 'Sawarabi Gothic';
+}
+section#contact main article.left__side form .wrap__rgpd {
+	padding: 1rem;
+}
+section#contact main article.left__side form .wrap__rgpd p {
+	color: var(--main__color);
+	text-align: left;
+	margin-left: 1rem;
+}
+
+section#contact main article.right__side {
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+section#contact main article.right__side .coordonnees {
+	border: solid 1px var(--active__link);
+	border-radius: 0.5rem;
+	margin: 1rem 0;
+	width: 100%;
+}
+section#contact main article.right__side .coordonnees:nth-child(1) {
+	margin-bottom: 0;
+}
+section#contact main article.right__side .coordonnees:nth-child(2) {
+	margin-top: 0;
+}
+section#contact main article.right__side .coordonnees ul {
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	font-family: 'Sawarabi Gothic';
+	list-style: none;
+	text-align: left;
+}
+section#contact main article.right__side .coordonnees ul li svg {
+	margin-right: 1rem;
+}

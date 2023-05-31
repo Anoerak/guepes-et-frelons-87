@@ -1,0 +1,64 @@
+section#recuperation-abeilles {
+	min-height: 90vh;
+	width: 100%;
+}
+
+section#recuperation-abeilles h1,
+h2,
+h3 {
+	font-family: 'Sawarabi Gothic';
+	color: var(--main__color);
+	margin: 0;
+}
+section#recuperation-abeilles h1 {
+	font-size: 2rem;
+	margin-top: 2rem;
+	color: var(--danger__color);
+}
+section#recuperation-abeilles h2 {
+	font-size: 1.8rem;
+}
+section#recuperation-abeilles h3 {
+	font-size: 1.6rem;
+	color: var(--danger__color);
+}
+
+section#recuperation-abeilles a {
+	color: var(--secondary__color);
+}
+section#recuperation-abeilles a:hover {
+	color: var(--active__link);
+}
+
+section#recuperation-abeilles article.article__row__1 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	min-height: 45rem;
+	margin: 0;
+}
+section#recuperation-abeilles article.article__row__1 .left__side {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 2rem;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+section#recuperation-abeilles article.article__row__1 .left__side .left__side__content {
+	text-align: left;
+}
+section#recuperation-abeilles article.article__row__1 .left__side .left__side__content a {
+	color: var(--active__link);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+section#recuperation-abeilles article.article__row__1 .right__side {
+	background-image: var(--recuperation__abeilles__page__row1__img);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0 2rem;
+}

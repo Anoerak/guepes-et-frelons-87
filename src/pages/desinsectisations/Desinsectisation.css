@@ -72,7 +72,7 @@ section#desinsectisation article.article__row__1 .left__side .left__side__conten
 }
 
 section#desinsectisation article.article__row__1 .right__side {
-	background-image: var(--hornet__on__branch__bg);
+	background-image: var(--desinsectisation__page__row1__img);
 	background-repeat: no-repeat;
 	background-position: center;
 	padding: 0 2rem;

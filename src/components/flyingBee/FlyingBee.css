@@ -6,8 +6,9 @@
 .wrap {
 	/* background-color: #46d0fd98; */
 	background-image: linear-gradient(#69d9ff98, #9ce6ff98);
+	background-color: white;
 	position: relative;
-	height: 8rem;
+	height: 30vh;
 	padding: 2rem 0;
 	z-index: 0;
 	margin-top: -4px;
@@ -42,7 +43,7 @@
 .wrap2 {
 	position: absolute;
 	left: 20%;
-	margin-top: -150px;
+	margin-top: -75px;
 	animation: dodging1 1s ease-in-out infinite;
 }
 

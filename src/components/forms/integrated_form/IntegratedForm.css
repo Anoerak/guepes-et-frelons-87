@@ -3,7 +3,7 @@ article.article__row__4 {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	background-image: var(--fourth__article__bg);
+	background-image: var(--integrated__form__bg);
 	color: var(--secondary__color);
 	background-size: cover;
 	background-position: center;

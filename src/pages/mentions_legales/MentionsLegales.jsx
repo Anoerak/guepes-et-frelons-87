@@ -1,8 +1,10 @@
 import React from 'react';
 
+import useTitle from '@Utils/hooks/useTitle';
 import './MentionsLegales.css';
 
 function MentionsLegale() {
+	useTitle('G&F87 | Mentions légales');
 	return (
 		<section id='center_column'>
 			<div id='rubric_title'>Mentions légales</div>

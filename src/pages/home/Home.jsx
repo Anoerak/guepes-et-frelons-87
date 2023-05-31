@@ -1,5 +1,6 @@
 import React from 'react';
 
+import useTitle from '@Utils/hooks/useTitle';
 import TruckPicture from '@Images/target_pickup.png';
 import HornetPicture from '@Images/target_hornet.png';
 import Slideshow from '@Components/slideshow/Slideshow';
@@ -8,6 +9,8 @@ import IntegratedForm from '@Components/forms/integrated_form/IntegratedForm';
 import './Home.css';
 
 function Home() {
+	useTitle('Guêpes et frelons 87 | Accueil');
+
 	return (
 		<section id='home'>
 			<Slideshow />
@@ -15,7 +18,6 @@ function Home() {
 				title='Société de désinsectisation, dératisation et désinfection près de Limoges (87)'
 				subtitle='Service de Piégeage et dépigeonnage '
 			/>
-
 			<article className='article__row__1'>
 				<div className='left__side'>
 					<p className='text'>
