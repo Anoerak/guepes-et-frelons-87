@@ -24,17 +24,20 @@ function Header() {
 			hamburgerMenu.classList.remove('active');
 			navbarContainer.classList.remove('active');
 			navbar.classList.remove('active');
+			document.getElementsByTagName('section')[0].style.display = 'block';
+			document.getElementsByTagName('footer')[0].style.display = 'flex';
 		} else {
 			navMenu.classList.add('active');
 			hamburgerMenu.classList.add('active');
 			navbarContainer.classList.add('active');
 			navbar.classList.add('active');
-			//
+			document.getElementsByTagName('section')[0].style.display = 'none';
+			document.getElementsByTagName('footer')[0].style.display = 'none';
 		}
 	}
 
 	const handleScroll = useCallback(() => {
-		if (window.scrollY > 100) {
+		if (window.scrollY > 100 && window.innerWidth > 768 && navMenu !== null) {
 			navMenu.classList.add('scroll__header');
 		} else {
 			navMenu.classList.remove('scroll__header');

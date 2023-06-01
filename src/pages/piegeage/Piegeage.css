@@ -1,67 +1,13 @@
-section#piegeage {
-	min-height: 90vh;
-	width: 100%;
-}
-
-section#piegeage h1,
-h2,
-h3 {
-	font-family: 'Sawarabi Gothic';
-	color: var(--main__color);
-	margin: 0;
-}
-section#piegeage h1 {
-	font-size: 2rem;
-	margin-top: 2rem;
-	color: var(--danger__color);
-}
-section#piegeage h2 {
-	font-size: 1.8rem;
-}
-section#piegeage h3 {
-	font-size: 1.6rem;
-	color: var(--danger__color);
-}
-
-section#piegeage a {
-	color: var(--secondary__color);
-}
-section#piegeage a:hover {
-	color: var(--active__link);
-}
-
-section#piegeage article.article__row__1 {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	min-height: 45rem;
-	margin: 0;
+section.page__template article.article__row__1 .left__side {
+	/* justify-content: center; */
+	margin: auto;
 }
 section#piegeage article.article__row__1 .left__side {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	padding: 0 2rem;
-	font-size: 1rem;
-	line-height: 1rem;
-}
-section#piegeage article.article__row__1 .left__side .left__side__content {
-	text-align: left;
+	line-height: 1.25rem;
 }
 section#piegeage article.article__row__1 .left__side .left__side__content a {
 	color: var(--active__link);
-	font-weight: bold;
-	text-decoration: none;
 }
-section#piegeage article.article__row__1 .left__side .left__side__content p {
-	line-height: 1.5rem;
-}
-
 section#piegeage article.article__row__1 .right__side {
 	background-image: var(--piegeage__page__row1__img);
-	background-repeat: no-repeat;
-	background-position: center;
-	padding: 0 2rem;
 }

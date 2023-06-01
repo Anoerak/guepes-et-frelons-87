@@ -5,7 +5,7 @@ footer {
 	justify-content: space-between;
 	box-shadow: 0 0 10px var(--tertiary__color);
 	z-index: 99;
-	padding: 20px 20px 0 20px;
+	padding: 1rem;
 	text-align: center;
 	font-size: 14px;
 	font-weight: 300;
@@ -132,21 +132,20 @@ footer .footer__bottom p {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-	...;
-} */
+@media only screen and (max-width: 600px) {
+	footer .footer__container .footer__content .footer__content__right .direct__contact {
+		flex-direction: column;
+	}
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-	...;
-} */
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
-	...;
-} */
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-	...;
-} */
+@media only screen and (min-width: 1200px) {
+}

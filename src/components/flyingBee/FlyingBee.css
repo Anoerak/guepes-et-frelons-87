@@ -8,7 +8,7 @@
 	background-image: linear-gradient(#69d9ff98, #9ce6ff98);
 	background-color: white;
 	position: relative;
-	height: 30vh;
+	height: 30dvh;
 	padding: 2rem 0;
 	z-index: 0;
 	margin-top: -4px;
@@ -40,10 +40,10 @@
 		top: 0;
 	}
 }
-.wrap2 {
+.bee {
 	position: absolute;
 	left: 20%;
-	margin-top: -75px;
+	margin-top: -8rem;
 	animation: dodging1 1s ease-in-out infinite;
 }
 
@@ -292,4 +292,37 @@
 		120px 150px 1px rgba(255, 255, 255, 0.95);
 	animation: cloud2 2.8s 1s linear infinite;
 	z-index: 1;
+}
+
+/*
+|--------------------------------------
+| Responsive
+|--------------------------------------
+*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+	.wrap {
+		height: 60dvh;
+	}
+	.wrap h1,
+	.wrap h2 {
+		font-size: 1.75rem;
+		font-weight: 400;
+	}
+	.bee {
+		left: -35%;
+		margin-top: 0;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1660px) {
 }

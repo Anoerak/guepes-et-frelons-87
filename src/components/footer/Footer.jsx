@@ -12,7 +12,6 @@ import './Footer.css';
 
 function Footer() {
 	const [dataset] = useFetchJson(process.env.REACT_APP_API_URL, 'contactInfos');
-	console.log(dataset);
 	return (
 		<footer>
 			<div className='footer__container'>

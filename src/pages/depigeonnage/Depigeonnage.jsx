@@ -8,7 +8,7 @@ import './Depigeonnage.css';
 function Depigeonnage() {
 	useTitle('G&F87 | Depigeonnage');
 	return (
-		<section id='depigeonnage'>
+		<section id='depigeonnage' className='page__template'>
 			<h1>Dépigeonnage</h1>
 			<h2>Dépigeonnage à Saint-Yrieix-la-Perche près de Limoges en Haute-Vienne​ (87)</h2>
 			<h3>Traitement des pigeons en Haute-vienne (87)</h3>

@@ -6,6 +6,7 @@
 	--tertiary__color: #e5f386;
 	--quaternary__color: #f5de81;
 	--quinary__color: #f5de81a8;
+	--hamburger__bg__color: #00000079;
 	--blue__sky: #00bfff98;
 	--blue__facebook: #1978f2;
 	--pink__instagram: #e5415a;
@@ -20,6 +21,7 @@
 	/* HTML Element */
 	--header__bg: rgba(255, 255, 255, 0.73);
 	/* Background Images */
+	--header__bg: url('@Images/header-bg.jpg');
 	--section-bg: url('@Images/section-bg.jpg');
 	--home__page__row2__bg: url('@Images/header-bg.jpg');
 	--home__page__row2__img: url('@Images/homepage_row2_img.jpg');
@@ -36,6 +38,8 @@
 }
 
 body {
+	overflow-y: scroll;
+	overflow-x: hidden;
 	margin: 0;
 	min-height: 100vh;
 	font-family: -apple-system, BlinkMacSystemFont, 'Sawarabi Gothic', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',

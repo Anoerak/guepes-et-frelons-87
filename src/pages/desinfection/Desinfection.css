@@ -1,75 +1,8 @@
-section#desinfection {
-	min-height: 90vh;
-	width: 100%;
-}
-
-section#desinfection h1,
-h2,
-h3 {
-	font-family: 'Sawarabi Gothic';
-	color: var(--main__color);
-	margin: 0;
-}
-section#desinfection h1 {
-	font-size: 2rem;
-	margin-top: 2rem;
-	color: var(--danger__color);
-}
-section#desinfection h2 {
-	font-size: 1.8rem;
-}
-section#desinfection h3 {
-	font-size: 1.6rem;
-	color: var(--danger__color);
-}
-
-section#desinfection a {
-	color: var(--secondary__color);
-}
-section#desinfection a:hover {
-	color: var(--active__link);
-}
-
-section#desinfection article.article__row__1 {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	min-height: 45rem;
-	margin: 0;
-}
-section#desinfection article.article__row__1 .left__side {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	padding: 0 2rem;
-	font-size: 1rem;
-	line-height: 1rem;
-}
-section#desinfection article.article__row__1 .left__side .left__side__content {
-	text-align: left;
-}
-section#desinfection article.article__row__1 .left__side .left__side__content a {
-	color: var(--active__link);
-	font-weight: bold;
-	text-decoration: none;
-}
-
 section#desinfection article.article__row__1 .right__side {
 	background-image: var(--desinfection__page__row1__img);
-	background-repeat: no-repeat;
-	background-position: center;
-	padding: 0 2rem;
 }
 
 section#desinfection article.article__row__1 .left__side .left__side__content ul,
 section#desinfection article.article__row__1 .left__side .left__side__content .lists ul {
 	list-style-image: url('@Images/list_style_image_black.png');
-	list-style-position: outside;
-}
-section#desinfection article.article__row__1 .left__side .left__side__content ul li,
-section#desinfection article.article__row__1 .left__side .left__side__content .lists ul li {
-	margin: 0.5rem 0;
-	text-align: left;
 }

@@ -70,7 +70,7 @@ function ContactForm({ arg }) {
 							.
 						</p>
 					</div>
-					<div className='form__group'>
+					<div className='form__group button'>
 						<input className='submit__button' type='submit' value='Envoyer le formulaire' />
 					</div>
 				</form>

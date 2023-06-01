@@ -11,7 +11,7 @@ function FlyingBee(props) {
 		<div className='wrap'>
 			<h1>{title}</h1>
 			<h2>{subtitle}</h2>
-			<div className='wrap2'>
+			<div className='bee'>
 				<div className='body'></div>
 				<div className='wing1'></div>
 				<div className='wing2'></div>

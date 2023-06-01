@@ -1,5 +1,6 @@
 section#contact {
-	min-height: 90vh;
+	min-height: 160dvh;
+	height: auto;
 	width: 100%;
 	background: none;
 }
@@ -21,10 +22,10 @@ section#contact h2 {
 }
 
 section#contact main {
-	height: 80vh;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: flex-start;
+	margin-top: 2rem;
 }
 
 section#contact main article {
@@ -33,6 +34,8 @@ section#contact main article {
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
+	margin-top: 0;
+	height: initial;
 }
 section#contact main article h3 {
 	color: var(--danger__color);
@@ -117,4 +120,70 @@ section#contact main article.right__side .coordonnees ul {
 }
 section#contact main article.right__side .coordonnees ul li svg {
 	margin-right: 1rem;
+}
+
+/*
+|--------------------------------------
+| Responsive
+|--------------------------------------
+*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+	section#contact h1 {
+		font-size: 1.75rem;
+	}
+	section#contact h2 {
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+	section#contact main article h3 {
+		font-size: 1.25rem;
+	}
+	section#contact main {
+		flex-direction: column;
+		align-items: center;
+	}
+	section#contact main article {
+		width: 100%;
+	}
+	section#contact main .left__side .form__group.button {
+		width: 50%;
+	}
+	section#contact main article.left__side form .form__group input.submit__button {
+		width: 90%;
+	}
+	section#contact main .right__side {
+		margin: 2.5rem;
+		position: relative;
+	}
+	section#contact main .right__side::before {
+		content: '';
+		width: 70%;
+		height: 1px;
+		background-color: var(--active__link);
+		position: absolute;
+		top: -1rem;
+	}
+	section#contact main .right__side .nous {
+		height: auto;
+		align-items: center;
+		width: 90%;
+		max-height: none;
+		max-width: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1660px) {
 }

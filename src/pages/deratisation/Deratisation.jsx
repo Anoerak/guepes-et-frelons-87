@@ -7,10 +7,10 @@ import './Deratisation.css';
 function Deratisation() {
 	useTitle('G&F87 | Deratisation');
 	return (
-		<section id='deratisation'>
-			<h1>Désinfection</h1>
-			<h2>Opérations de désinfection à Saint-Yrieix-la-Perche près de Limoges en Haute-Vienne (87)</h2>
-			<h3>Désinfection et contrôle des nuisibles</h3>
+		<section id='deratisation' className='page__template'>
+			<h1>Dératisation</h1>
+			<h2>Dératisation à Saint-Yrieix-la-Perche près de Limoges en Haute-Vienne (87)</h2>
+			<h3>Appâts pour rongeurs et raticides à Limoges en Haute-vienne (87)</h3>
 
 			<article className='article__row__1'>
 				<div className='left__side'>

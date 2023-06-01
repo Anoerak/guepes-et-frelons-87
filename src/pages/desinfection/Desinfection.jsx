@@ -7,7 +7,7 @@ import './Desinfection.css';
 function Desinfection() {
 	useTitle('G&F87 | Desinfection');
 	return (
-		<section id='desinfection'>
+		<section id='desinfection' className='page__template'>
 			<h1>Désinfection</h1>
 			<h2>Opérations de désinfection à Saint-Yrieix-la-Perche près de Limoges en Haute-Vienne (87)</h2>
 			<h3>Désinfection et contrôle des nuisibles</h3>

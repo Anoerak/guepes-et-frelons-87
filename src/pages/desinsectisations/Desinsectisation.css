@@ -1,79 +1,8 @@
-section#desinsectisation {
-	min-height: 90vh;
-	width: 100%;
-}
-
-section#desinsectisation h1,
-h2,
-h3 {
-	font-family: 'Sawarabi Gothic';
-	color: var(--main__color);
-	margin: 0;
-}
-section#desinsectisation h1 {
-	font-size: 2rem;
-	margin-top: 2rem;
-	color: var(--danger__color);
-}
-section#desinsectisation h2 {
-	font-size: 1.8rem;
-}
-section#desinsectisation h3 {
-	font-size: 1.6rem;
-	color: var(--danger__color);
-}
-
-section#desinsectisation a {
-	color: var(--secondary__color);
-}
-section#desinsectisation a:hover {
-	color: var(--active__link);
-}
-
-section#desinsectisation article.article__row__1 {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	min-height: 45rem;
-	margin: 0;
-}
-section#desinsectisation article.article__row__1 .left__side {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	padding: 0 2rem;
-	font-size: 1rem;
-	line-height: 1rem;
-}
-section#desinsectisation article.article__row__1 .left__side .left__side__content {
-	text-align: left;
-}
-section#desinsectisation article.article__row__1 .left__side .left__side__content a {
-	color: var(--active__link);
-	font-weight: bold;
-	text-decoration: none;
-}
-section#desinsectisation article.article__row__1 .left__side .left__side__content .lists {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-section#desinsectisation article.article__row__1 .left__side .left__side__content ul,
-section#desinsectisation article.article__row__1 .left__side .left__side__content .lists ul {
+section.page__template article.article__row__1 .left__side .left__side__content ul,
+section.page__template article.article__row__1 .left__side .left__side__content .lists ul {
 	list-style-image: url('@Images/list_style_image_black.png');
-	list-style-position: outside;
-}
-section#desinsectisation article.article__row__1 .left__side .left__side__content ul li,
-section#desinsectisation article.article__row__1 .left__side .left__side__content .lists ul li {
-	margin: 0.5rem 0;
-	text-align: left;
 }
 
-section#desinsectisation article.article__row__1 .right__side {
+section.page__template article.article__row__1 .right__side {
 	background-image: var(--desinsectisation__page__row1__img);
-	background-repeat: no-repeat;
-	background-position: center;
-	padding: 0 2rem;
 }

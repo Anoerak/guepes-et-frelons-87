@@ -1,15 +1,15 @@
 /* eslint-disable no-irregular-whitespace */
 import React from 'react';
 import useTitle from '@Utils/hooks/useTitle';
+import IntegratedForm from '@Components/forms/integrated_form/IntegratedForm';
 
 import './TraitementBoisChampi.css';
-import IntegratedForm from '@Components/forms/integrated_form/IntegratedForm';
 
 function TraitementBoisChampi() {
 	useTitle('G&F87 | TraitementBoisChampi');
 
 	return (
-		<section id='traitement-bois-champi'>
+		<section id='traitement-bois-champi' className='page__template'>
 			<h1>Traitement du bois champignon </h1>
 			<h2>
 				Traitement du bois charpente et de champignons à Saint-Yrieix-la-Perche près de Limoges en Haute-Vienne

@@ -9,7 +9,7 @@ function Piegeage() {
 	useTitle('G&F87 | Piegeage');
 
 	return (
-		<section id='piegeage'>
+		<section id='piegeage' className='page__template'>
 			<h1>Piégeage</h1>
 			<h2>Piégeage et chasse passive à Saint-Yrieix-la-Perche près de Limoges en Haute-Vienne (87)</h2>
 			<h3>Piégeage des nuisibles en Haute-vienne</h3>

@@ -4,12 +4,13 @@ import useTitle from '@Utils/hooks/useTitle';
 import IntegratedForm from '@Components/forms/integrated_form/IntegratedForm';
 
 import './Desinsectisation.css';
+import '@Styles/PageTemplate.css';
 
 function Desinsectisation() {
 	useTitle('G&F87 | Desinsectisation');
 
 	return (
-		<section id='desinsectisation'>
+		<section id='desinsectisation' className='page__template'>
 			<h1>Désinsectisation</h1>
 			<h2>Désinsectisation et traitement des punaises de lit à Saint-Yrieix-la-Perche près de Limoges (87)</h2>
 			<h3>Société de désinsectisation à votre service </h3>
