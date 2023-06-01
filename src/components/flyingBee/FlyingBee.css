@@ -8,7 +8,7 @@
 	background-image: linear-gradient(#69d9ff98, #9ce6ff98);
 	background-color: white;
 	position: relative;
-	height: 30dvh;
+	height: 45dvh;
 	padding: 2rem 0;
 	z-index: 0;
 	margin-top: -4px;
@@ -29,7 +29,7 @@
 | The Bee
 |------------------------------
 */
-@keyframes dodging1 {
+/* @keyframes dodging1 {
 	0% {
 		top: 0;
 	}
@@ -39,12 +39,59 @@
 	100% {
 		top: 0;
 	}
+} */
+@keyframes movingBackAndForth {
+	0% {
+		top: 0;
+		left: 20%;
+	}
+	10% {
+		top: 75px;
+		left: 10%;
+	}
+	20% {
+		top: 0;
+		left: 5%;
+	}
+	30% {
+		top: 75px;
+		left: 0%;
+	}
+	40% {
+		top: 0;
+		left: 5%;
+	}
+	50% {
+		top: 75px;
+		left: -5%;
+	}
+	60% {
+		top: 0;
+		left: -10%;
+	}
+	70% {
+		top: 75px;
+		left: -5%;
+	}
+	80% {
+		top: 0;
+		left: -15%;
+	}
+	90% {
+		top: 75px;
+		left: -20%;
+	}
+	100% {
+		top: 0;
+		left: 20%;
+	}
 }
 .bee {
 	position: absolute;
 	left: 20%;
 	margin-top: -8rem;
 	animation: dodging1 1s ease-in-out infinite;
+	animation: movingBackAndForth 5s ease-in-out infinite;
 }
 
 /*
@@ -316,7 +363,16 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+	.wrap h1,
+	.wrap h2 {
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	.bee {
+		left: 0%;
+		margin-top: 0;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

@@ -82,7 +82,30 @@ article.article__row__4 .right__side fieldset {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+	article.article__row__4 {
+		min-height: 50rem;
+	}
+	article.article__row__4 .left__side {
+		display: none;
+	}
+	article.article__row__4 .right__side {
+		width: 90%;
+		max-width: 100%;
+	}
+	article.article__row__4 .right__side h3 {
+		font-size: 1.75rem;
+	}
+	article.article__row__4 .right__side fieldset {
+		padding: 0;
+		height: 80%;
+	}
+	article.article__row__4 .right__side fieldset textarea {
+		max-width: 80%;
+	}
+	article.article__row__4 .right__side fieldset .wrap__rgpd {
+		width: 90%;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

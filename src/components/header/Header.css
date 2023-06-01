@@ -103,14 +103,35 @@ a:hover {
 	transition: all 0.35s ease-in-out;
 }
 
+/*
+|-------------------------------------
+| Animations
+|-------------------------------------
+*/
+
+@keyframes menuFromTopToBottom {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* 
+|-------------------------------------
+| Responsive
+|------------------------------------- 
+*/
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 	.navbar .navbar__container {
 		height: 100px;
 	}
 	html body div#root div.App nav.navbar.active {
 		height: auto;
-		transform: translateY(0);
+		animation: menuFromTopToBottom 0.5s ease-in-out;
 	}
 
 	html body div#root div.App nav.navbar div.navbar__container.active {
@@ -120,7 +141,6 @@ a:hover {
 	html body div#root div.App nav.navbar div.navbar__container ul.nav__menu {
 		display: none;
 		flex-direction: column;
-		animation: menuFromTopToBottom 0.5s ease-in-out;
 	}
 	html body div#root div.App nav.navbar div.navbar__container ul.nav__menu.active {
 		display: flex;
@@ -132,7 +152,7 @@ a:hover {
 		flex-direction: column;
 		align-items: center;
 		gap: 4rem;
-		transition: all 0.5s ease-in-out;
+		animation: menuFromTopToBottom 0.5s ease-in-out;
 	}
 
 	.navbar .navbar__container .hamburger__menu__icon {
@@ -160,45 +180,29 @@ a:hover {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar .navbar__container {
+		height: 200px;
+	}
+	.navbar .navbar__container .navbar__logo img {
+		max-height: 4.5rem;
+	}
+	.navbar .navbar__container .nav__menu.scroll__header {
+		top: 2rem;
+		width: 90%;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.navbar .navbar__container {
 		height: 180px;
 	}
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (max-width: 1660px) {
 	.navbar .navbar__container {
 		height: 150px;
 	}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1660px) {
-	.navbar .navbar__container {
-		height: 140px;
-	}
-}
-
-/*
-|-------------------------------------
-| Animations
-|-------------------------------------
-*/
-
-@keyframes menuFromTopToBottom {
-	0% {
-		transform: translateY(-100%);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
-@keyframes menuFromBottomToTop {
-	0% {
-		transform: translateY(0);
-	}
-	100% {
-		transform: translateY(-100%);
-	}
-}
+} */
