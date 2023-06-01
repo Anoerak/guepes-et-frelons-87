@@ -75,3 +75,68 @@ section#not-found button a:hover {
 	border: none;
 	color: var(--secondary__color);
 }
+
+/*
+|--------------------------------------
+| Responsive
+|--------------------------------------
+*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+	section#not-found .not__found__content {
+		padding: 0.5rem;
+	}
+	section#not-found .not__found__content h1 {
+		font-size: 2rem;
+	}
+
+	section#not-found .not__found__content h1 .vertical__text span {
+		font-size: 1rem;
+	}
+
+	section#not-found .not__found__content h2 {
+		font-size: 1rem;
+	}
+
+	section#not-found .not__found__content h3 {
+		font-size: 0.75rem;
+	}
+	section#not-found .not__found__content h1 .vertical__text span {
+		display: flex;
+		align-items: center;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+	section#not-found .not__found__content {
+		padding: 1rem;
+	}
+	section#not-found .not__found__content h1 {
+		font-size: 2.5rem;
+	}
+
+	section#not-found .not__found__content h1 .vertical__text span {
+		font-size: 1.5rem;
+	}
+
+	section#not-found .not__found__content h2 {
+		font-size: 1.5rem;
+	}
+
+	section#not-found .not__found__content h3 {
+		font-size: 1rem;
+	}
+	section#not-found .not__found__content h1 .vertical__text span {
+		display: flex;
+		align-items: center;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1660px) {
+}
