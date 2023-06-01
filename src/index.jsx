@@ -7,7 +7,7 @@ import { store } from '@App/store';
 
 import App from './App';
 
-import './utils/styles/Index.css';
+import '@Styles/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
