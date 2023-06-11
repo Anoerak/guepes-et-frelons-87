@@ -54,7 +54,7 @@
 	background-color: rgba(0, 0, 0, 0.6);
 	list-style-type: none;
 	border-radius: 1rem;
-	padding: 1rem;
+	padding: 0.75rem;
 }
 
 .navbar .navbar__container .nav__menu li {
