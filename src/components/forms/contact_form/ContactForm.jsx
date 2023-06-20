@@ -25,7 +25,7 @@ function ContactForm({ arg }) {
 			) : isError ? (
 				<p>{errorMessage}</p>
 			) : (
-				<form action='' method='POST'>
+				<form action='mail.php' method='POST'>
 					{data.map((item, index) => (
 						<div className='form__group' key={index}>
 							{item.type === 'textarea' ? (
