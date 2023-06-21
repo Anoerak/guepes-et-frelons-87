@@ -61,3 +61,14 @@ form .form__group .submit__button:hover {
 	box-shadow: 0 0 0.5rem var(--active__link);
 	cursor: pointer;
 }
+
+form .form__group .submit__button:disabled {
+	filter: contrast(0.5);
+	background-color: var(--main__color);
+	color: var(--secondary__color);
+	border: 1px solid var(--main__color);
+	cursor: not-allowed;
+}
+form .form__group .submit__button:disabled:hover {
+	box-shadow: 0 0 0.5rem var(--danger__color);
+}

@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import useFetchJson from '@Hooks/useFetchJson';
 
@@ -11,8 +11,41 @@ import './ContactForm.css';
 function ContactForm({ arg }) {
 	const formPath = process.env.REACT_APP_API_URL;
 	const formPathOption = arg;
+	const [checkBoxDisabled, setCheckBoxDisabled] = useState(true);
+	const [submitButtonDisabled, setSubmitButtonDisabled] = useState(true);
 
 	const [data, isError, loading, errorMessage] = useFetchJson(formPath, formPathOption);
+
+	// We use a callback function to avoid infinite loop
+	const listeningInputs = useCallback(() => {
+		const inputs = [];
+		inputs.push(document.querySelector('input[name="name"]'));
+		inputs.push(document.querySelector('input[name="firstname"]'));
+		inputs.push(document.querySelector('input[name="email"]'));
+		inputs.push(document.querySelector('input[name="phone"]'));
+		inputs.push(document.querySelector('textarea[name="message"]'));
+
+		// @ts-ignore
+		const formIsFilled = inputs.every((input) => input.value !== '');
+
+		// @ts-ignore
+		const checkBoxChecked = document.querySelector('input[name="rgpd1"]').checked;
+
+		const checkForm = (form, checkbox) => {
+			console.log('checkbox', checkbox);
+			if (form) {
+				setCheckBoxDisabled(false);
+				if (checkbox === true) {
+					setSubmitButtonDisabled(false);
+				}
+			} else {
+				setCheckBoxDisabled(true);
+				setSubmitButtonDisabled(true);
+			}
+		};
+
+		checkForm(formIsFilled, checkBoxChecked);
+	}, []);
 
 	useEffect(() => {
 		return () => {};
@@ -25,7 +58,7 @@ function ContactForm({ arg }) {
 			) : isError ? (
 				<p>{errorMessage}</p>
 			) : (
-				<form action='mail.php' method='POST'>
+				<form action='php/mail.php' method='POST'>
 					{data.map((item, index) => (
 						<div className='form__group' key={index}>
 							{item.type === 'textarea' ? (
@@ -36,6 +69,7 @@ function ContactForm({ arg }) {
 									cols={item.cols}
 									rows={item.rows}
 									required={item.required}
+									onChange={listeningInputs}
 								></textarea>
 							) : (
 								<input
@@ -44,6 +78,7 @@ function ContactForm({ arg }) {
 									id={item.id}
 									placeholder={item.placeholder}
 									required={item.required}
+									onChange={listeningInputs}
 								/>
 							)}
 						</div>
@@ -53,9 +88,12 @@ function ContactForm({ arg }) {
 							<input
 								type='checkbox'
 								value='
-										J’accepte que les données saisies dans le formulaire soient utilisées pour me recontacter dans le cadre de ma demande'
+								J’accepte que les données saisies dans le formulaire soient utilisées pour me recontacter dans le cadre de ma demande'
 								id='rgpd1'
 								name='rgpd1'
+								required={true}
+								onChange={listeningInputs}
+								disabled={checkBoxDisabled}
 							/>
 							<label htmlFor='rgpd1'></label>
 						</div>
@@ -64,14 +102,19 @@ function ContactForm({ arg }) {
 							utilisées par www.anti-nuisible87.fr pour me recontacter dans le cadre de ma demande. Les
 							destinataires sont www.anti-nuisible87.fr et seulement ce dernier. Pour plus d'informations
 							sur le traitement de vos données et l'exercice de vos droits, reportez-vous à notre{' '}
-							<a className='legals__link' href='/mentions_legales'>
+							<a className='legals__link' href='/mentions-legales'>
 								politique de confidentialité
 							</a>
 							.
 						</p>
 					</div>
 					<div className='form__group button'>
-						<input className='submit__button' type='submit' value='Envoyer le formulaire' />
+						<input
+							className='submit__button'
+							type='submit'
+							value='Envoyer le formulaire'
+							disabled={submitButtonDisabled}
+						/>
 					</div>
 				</form>
 			)}

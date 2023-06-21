@@ -6,8 +6,8 @@ import './MentionsLegales.css';
 function MentionsLegale() {
 	useTitle('G&F87 | Mentions légales');
 	return (
-		<section id='center_column'>
-			<div id='rubric_title'>Mentions légales</div>
+		<section id='mentions-legales'>
+			<h1 id='rubric_title'>Mentions légales</h1>
 			<div id='content_pages'>
 				<div className='row'>
 					<div id='mentions_legales_client' className='col-sm-4'>
@@ -43,19 +43,19 @@ function MentionsLegale() {
 
 					<div id='mentions_legales_hebergeur' className='col-sm-4'>
 						<p id='hebergeur'>
-							<strong>Hébergeur : </strong>Owentis
+							<strong>Hébergeur : </strong>Guêpes et Frelons 87
 							<br />
 							<strong>Raison sociale : </strong>
-							<abbr title='Société par Actions Simplifiées'>SAS.</abbr> Owentis
+							<abbr title='Société par Actions Simplifiées'>SAS.</abbr> Guêpes et Frelons 87
 							<br />
-							<strong>Siège social : </strong>53 rue Baudin
+							<strong>Siège social : </strong>Pierrebrune
 							<br />
-							92300 Levallois Perret
+							87500 Saint Yrieix La Perche
 							<br />
 							<strong>
-								<abbr title='Registre du Commerce et des Sociétés'>RCS.</abbr> de Nanterre :{' '}
+								<abbr title="Chambre des métiers et de l'artisanat">RM.</abbr> de Limoges :{' '}
 							</strong>
-							405 398 736
+							842.528.077
 							<br />
 						</p>
 					</div>
@@ -183,11 +183,12 @@ function MentionsLegale() {
 
 								<h2>Utilisation de cookies</h2>
 								<p className='justify'>
-									La gestion des commandes et l’affichage du site internet nécessite l’utilisation de
-									cookies. Des <strong>informations non personnelles sont enregistrées</strong> par ce
-									système de cookies (fichiers texte utilisés pour reconnaître un utilisateur et ainsi
-									faciliter son utilisation du site). Ceux-ci n’ont aucune signification en dehors de
-									leur utilisation sur le site www.anti-nuisible87.fr
+									La gestion des commandes et l’affichage du site internet ne nécessite pas
+									l’utilisation de cookies. Par conséquent,{' '}
+									<strong>
+										aucunes informations personnelles ou non personnelles ne sont enregistrées
+									</strong>{' '}
+									par ce site.
 								</p>
 							</div>
 

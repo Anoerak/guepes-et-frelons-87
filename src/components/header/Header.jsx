@@ -77,7 +77,10 @@ function Header() {
 											className={'nav__links ' + (activeId === item.id ? ' active' : '')}
 											onClick={() => {
 												setActiveId(item.id);
-												mobileMenu();
+												// If windows.innerWidth is less than 768px, then close the menu
+												if (window.innerWidth < 768) {
+													mobileMenu();
+												}
 											}}
 										>
 											{item.title}

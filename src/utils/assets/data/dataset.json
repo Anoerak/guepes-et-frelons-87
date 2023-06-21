@@ -132,7 +132,6 @@
 			"name": "spammer",
 			"id": "spammer",
 			"label": "Your spammer email address",
-			"placeholder": "Your spammer email address",
 			"required": false,
 			"type": "hidden"
 		},

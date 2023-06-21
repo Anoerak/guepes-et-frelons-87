@@ -2,6 +2,7 @@
 	"name": "guepes-et-frelons",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": ".",
 	"dependencies": {
 		"@craco/craco": "^7.1.0",
 		"@fortawesome/fontawesome-svg-core": "^6.4.0",
