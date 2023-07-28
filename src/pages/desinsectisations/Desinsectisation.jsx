@@ -1,5 +1,6 @@
 import React from 'react';
 import useTitle from '@Utils/hooks/useTitle';
+import useFetchJson from '@Utils/hooks/useFetchJson';
 
 import IntegratedForm from '@Components/forms/integrated_form/IntegratedForm';
 
@@ -8,6 +9,7 @@ import '@Styles/PageTemplate.css';
 
 function Desinsectisation() {
 	useTitle('G&F87 | Desinsectisation');
+	const [dataset] = useFetchJson(process.env.REACT_APP_API_URL, 'contactInfos');
 
 	return (
 		<section id='desinsectisation' className='page__template'>
@@ -19,23 +21,20 @@ function Desinsectisation() {
 				<div className='left__side'>
 					<div className='left__side__content'>
 						<p>
-							<strong>Guêpes et frelons 87</strong> est une entreprise spécialisée dans la{' '}
-							<strong>désinsectisation</strong> à <strong>Saint-Yrieix-la-Perche</strong> près de{' '}
-							<strong>Limoges</strong> en <strong>Haute-Vienne (87)</strong>.
+							<strong>Guêpes et frelons 87</strong> est une entreprise spécialisée dans la <strong>désinsectisation</strong> à{' '}
+							<strong>Saint-Yrieix-la-Perche</strong> près de <strong>Limoges</strong> en <strong>Haute-Vienne (87)</strong>.
 						</p>
 						<p>
 							<br />
-							Ce processus consiste à éliminer les insectes pouvant causer des maladies, des allergies,
-							des crises d’asthme ou d’eczéma. Nous rappelons également que chez certains individus
-							atteints par l’insectophobie, la simple vue de ce genre de créature peut causer des crises
-							d’angoisses.
+							Ce processus consiste à éliminer les insectes pouvant causer des maladies, des allergies, des crises d’asthme ou
+							d’eczéma. Nous rappelons également que chez certains individus atteints par l’insectophobie, la simple vue de ce
+							genre de créature peut causer des crises d’angoisses.
 						</p>
 						<p>
 							<br />
-							Conscients du désagrément <strong>causés par les nuisibles</strong>, nos experts ont mis en
-							place des protocoles de <strong>désinsectisation</strong> qui ont fait leurs preuves. Notre
-							équipe de professionnels se charge de vous débarrasser des différents types d’insectes qui
-							peuvent vous gêner tels que :
+							Conscients du désagrément <strong>causés par les nuisibles</strong>, nos experts ont mis en place des protocoles
+							de <strong>désinsectisation</strong> qui ont fait leurs preuves. Notre équipe de professionnels se charge de
+							vous débarrasser des différents types d’insectes qui peuvent vous gêner tels que :
 						</p>
 						<div className='lists'>
 							<ul className='liste-puce2'>
@@ -57,11 +56,11 @@ function Desinsectisation() {
 							<li className='justify'>Réalisation de l’opération de désinsectisation</li>
 						</ul>
 						<p className='justify'>
-							Grâce à nos experts, votre tranquillité ne sera plus gênée par la nuisance des insectes.
-							Pour faire appel à nos professionnels, contactez-nous au{' '}
+							Grâce à nos experts, votre tranquillité ne sera plus gênée par la nuisance des insectes. Pour faire appel à nos
+							professionnels, contactez-nous au{' '}
 							<strong>
-								<a href='tel:0564172145' className='phone_link phone_google'>
-									05 64 17 21 45
+								<a href='tel:+337604013' className='phone_link phone_google'>
+									{dataset.phone}
 								</a>
 							</strong>{' '}
 							ou via notre{' '}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import useTitle from '@Utils/hooks/useTitle';
+import useFetchJson from '@Utils/hooks/useFetchJson';
 import ContactForm from '@Components/forms/contact_form/ContactForm';
 import Map from '@Components/openStreetMap/OpenStreetMap';
 
@@ -11,6 +12,7 @@ import './Contact.css';
 
 function Contact() {
 	useTitle('G&F87 | Contact');
+	const [dataset] = useFetchJson(process.env.REACT_APP_API_URL, 'contactInfos');
 
 	const [coords, setCoords] = useState({
 		latitude: 39.7837304,
@@ -48,7 +50,9 @@ function Contact() {
 							<ul className='contact_coordonnees'>
 								<li>
 									<FontAwesomeIcon icon={faPhone} title='Téléphone' />
-									05 64 17 21 45
+									<a href='tel:+337604013' className='phone_link phone_google'>
+										{dataset.phone}
+									</a>
 								</li>
 								<li>
 									<FontAwesomeIcon icon={faEnvelope} title='Email' />

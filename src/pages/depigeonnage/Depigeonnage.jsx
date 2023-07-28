@@ -2,11 +2,14 @@
 import React from 'react';
 import useTitle from '@Utils/hooks/useTitle';
 import IntegratedForm from '@Components/forms/integrated_form/IntegratedForm';
+import useFetchJson from '@Utils/hooks/useFetchJson';
 
 import './Depigeonnage.css';
 
 function Depigeonnage() {
 	useTitle('G&F87 | Depigeonnage');
+	const [dataset] = useFetchJson(process.env.REACT_APP_API_URL, 'contactInfos');
+
 	return (
 		<section id='depigeonnage' className='page__template'>
 			<h1>Dépigeonnage</h1>
@@ -18,23 +21,19 @@ function Depigeonnage() {
 					<div className='left__side'>
 						<div className='left__side__content'>
 							<p className='justify'>
-								<strong>Guêpes et frelons 87</strong> se charge également des opérations de{' '}
-								<strong>dépigeonnage</strong> à <strong>Saint-Yrieix-la-Perche près de Limoges </strong>
+								<strong>Guêpes et frelons 87</strong> se charge également des opérations de <strong>dépigeonnage</strong> à{' '}
+								<strong>Saint-Yrieix-la-Perche près de Limoges </strong>
 								en <strong>Haute-Vienne​ (87)</strong>.
 							</p>
 							<p>Les pigeons sont des volatiles pouvant vous causer des désagréments tels que :</p>
 							<ul className='liste-puce2'>
-								<li>
-									Les problèmes de santé causés par la transmission d’agents pathogènes et de
-									parasites
-								</li>
+								<li>Les problèmes de santé causés par la transmission d’agents pathogènes et de parasites</li>
 								<li>La dégradation des bâtiments et la salissure</li>
 								<li>L’attraction des rats qui se nourrissent de leurs œufs</li>
 								<li>La gêne causée par leurs bruits et leurs mauvaises odeurs</li>
 							</ul>
 							<p className='justify'>
-								Afin de vous préserver de la nuisance causée par les <strong>pigeons</strong>, nous
-								utilisons des moyens de{' '}
+								Afin de vous préserver de la nuisance causée par les <strong>pigeons</strong>, nous utilisons des moyens de{' '}
 								<strong>dépigeonnage mécaniques, électriques, visuels et sonores</strong> :
 							</p>
 							<ul className='liste-puce2'>
@@ -48,8 +47,8 @@ function Depigeonnage() {
 							<p>
 								Pour bénéficier de notre service de <strong>dépigeonnage</strong>, contactez-nous au{' '}
 								<strong>
-									<a href='tel:0564172145' className='phone_link phone_google'>
-										05 64 17 21 45
+									<a href='tel:+337604013' className='phone_link phone_google'>
+										{dataset.phone}
 									</a>
 								</strong>{' '}
 								ou via notre{' '}

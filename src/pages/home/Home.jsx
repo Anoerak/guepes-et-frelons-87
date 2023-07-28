@@ -1,4 +1,5 @@
 import React from 'react';
+import useFetchJson from '@Utils/hooks/useFetchJson';
 
 import useTitle from '@Utils/hooks/useTitle';
 import TruckPicture from '@Images/target_pickup.png';
@@ -11,6 +12,7 @@ import './Home.css';
 
 function Home() {
 	useTitle('Guêpes & Frelons 87 | Accueil');
+	const [dataset] = useFetchJson(process.env.REACT_APP_API_URL, 'contactInfos');
 
 	return (
 		<section id='home'>
@@ -35,8 +37,8 @@ function Home() {
 							<a href='/desinfection'>désinfection</a>
 						</strong>{' '}
 						à <br />
-						<strong>Saint-Yrieix-la-Perche</strong> près de <strong>Limoges</strong> en{' '}
-						<strong>Haute-Vienne (87)</strong> est à votre disposition.
+						<strong>Saint-Yrieix-la-Perche</strong> près de <strong>Limoges</strong> en <strong>Haute-Vienne (87)</strong> est à
+						votre disposition.
 					</p>
 					<img src={TruckPicture} alt='A_target_aiming_a_pickup_truck_with_the_company_branding' />
 				</div>
@@ -45,8 +47,8 @@ function Home() {
 					<p className='text'>
 						Nous mettons à votre disposition une équipe de professionnels expérimentés.
 						<br />
-						Nos experts s'engagent à préserver l’écosystème avec des techniques et des produits respectueux
-						de la faune et la flore.
+						Nos experts s'engagent à préserver l’écosystème avec des techniques et des produits respectueux de la faune et la
+						flore.
 					</p>
 				</div>
 			</article>
@@ -56,8 +58,7 @@ function Home() {
 				<div className='right__side'>
 					<h3>Des services variés</h3>
 					<p className='top'>
-						<strong>Guêpes & Frelons 87</strong> est une société expérimentée qui vous propose des services
-						diversifiés :
+						<strong>Guêpes & Frelons 87</strong> est une société expérimentée qui vous propose des services diversifiés :
 					</p>
 					<ul className='liste-puce1'>
 						<li>
@@ -91,10 +92,7 @@ function Home() {
 							</a>
 						</li>
 						<li>
-							<a
-								title='traitement bois charpente Saint-Yrieix-la-Perche'
-								href='/traitement-du-bois-champignon'
-							>
+							<a title='traitement bois charpente Saint-Yrieix-la-Perche' href='/traitement-du-bois-champignon'>
 								Traitement du bois et du champignon
 							</a>
 						</li>
@@ -105,8 +103,8 @@ function Home() {
 						Pour bénéficier de notre expérience et notre savoir-faire, contactez-nous au{' '}
 						<strong>
 							<br />
-							<a href='tel:0564172145' className='phone_link phone_google'>
-								05 64 17 21 45
+							<a href='tel:+337604013' className='phone_link phone_google'>
+								{dataset.phone}
 							</a>
 						</strong>{' '}
 						ou via notre{' '}
@@ -134,13 +132,11 @@ function Home() {
 						<strong>Saint-Yrieix-la-Perche (Haute-Vienne 87)</strong>.
 					</p>
 					<p>
-						Nous opérons à <strong>Limoges</strong>, en <strong>Dordogne</strong> et en{' '}
-						<strong>Corrèze</strong>.
+						Nous opérons à <strong>Limoges</strong>, en <strong>Dordogne</strong> et en <strong>Corrèze</strong>.
 					</p>
 					<p>
-						Notre équipe intervient rapidement dans un délai qui ne dépasse pas les 48h. Aucun frais
-						supplémentaires ne vous seront facturés pour les interventions effectuées durant les dimanches
-						et les jours fériés.
+						Notre équipe intervient rapidement dans un délai qui ne dépasse pas les 48h. Aucun frais supplémentaires ne vous
+						seront facturés pour les interventions effectuées durant les dimanches et les jours fériés.
 					</p>
 
 					<img
