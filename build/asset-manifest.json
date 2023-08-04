@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.2528d6e2.css",
-    "main.js": "./static/js/main.d1ccc1bc.js",
+    "main.js": "./static/js/main.a7475ccb.js",
     "static/media/404_bg.jpg": "./static/media/404_bg.ed59b28e0db24469c9d2.jpg",
     "static/media/slide2.jpg": "./static/media/slide2.9bec08958491a5462795.jpg",
     "static/media/slide5.jpg": "./static/media/slide5.080f0f4a7c16c3ce14c2.jpg",
@@ -33,10 +33,10 @@
     "static/media/phone-logo.png": "./static/media/phone-logo.68fd5e701a6894ba5e7e.png",
     "index.html": "./index.html",
     "main.2528d6e2.css.map": "./static/css/main.2528d6e2.css.map",
-    "main.d1ccc1bc.js.map": "./static/js/main.d1ccc1bc.js.map"
+    "main.a7475ccb.js.map": "./static/js/main.a7475ccb.js.map"
   },
   "entrypoints": [
     "static/css/main.2528d6e2.css",
-    "static/js/main.d1ccc1bc.js"
+    "static/js/main.a7475ccb.js"
   ]
 }

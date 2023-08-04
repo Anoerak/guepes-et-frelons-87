@@ -32,12 +32,12 @@ const Slideshow = () => {
 			) : (
 				<div className='slideshow'>
 					<div className='slideshowSlider' style={{ transform: `translate3d(${-slide * 100}%, 0, 0)` }}>
-						{data.map((/** @type {{ id: any; path: string; alt: any; }} */ slide) => (
+						{data.map((/** @type {{ id: any; path: string; pathWebp: String; alt: any; }} */ slide) => (
 							// @ts-ignore
 							<Slides
 								key={slide.id}
 								// eslint-disable-next-line no-undef
-								path={require('' + '@Images/' + slide.path)}
+								path={require('' + '@Images/Desktop/' + slide.pathWebp)}
 								alt={slide.alt}
 								onClick={() => console.log('click')}
 								isDelete={false}

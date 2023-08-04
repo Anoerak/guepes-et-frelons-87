@@ -58,11 +58,6 @@
 			"path": "/traitements-bois-champignons"
 		},
 		{
-			"id": 9,
-			"title": "Actualités",
-			"path": "/actualites"
-		},
-		{
 			"id": 10,
 			"title": "Contact",
 			"path": "/contact"
@@ -72,26 +67,31 @@
 		{
 			"id": 1,
 			"path": "slide1.jpg",
+			"pathWebp": "slide1.webp",
 			"alt": "Hornets on a nest."
 		},
 		{
 			"id": 2,
 			"path": "slide2.jpg",
+			"pathWebp": "slide2.webp",
 			"alt": "A man spreading product on a wall to remove lychen."
 		},
 		{
 			"id": 3,
 			"path": "slide3.jpg",
+			"pathWebp": "slide3.webp",
 			"alt": "A bee on a tree branch."
 		},
 		{
 			"id": 4,
 			"path": "slide4.jpg",
+			"pathWebp": "slide4.webp",
 			"alt": "A man dealing with hornets on a roof."
 		},
 		{
 			"id": 5,
 			"path": "slide5.jpg",
+			"pathWebp": "slide5.webp",
 			"alt": "A mouse approaching a house."
 		}
 	],
