@@ -1,0 +1,77 @@
+/* CSS Color Variables 
+0665350427*/
+:root {
+	/* Colors */
+	--main__color: #000;
+	--secondary__color: #fff;
+	--tertiary__color: #e5f386;
+	--quaternary__color: #f5de81;
+	--quinary__color: #f5de81a8;
+	--hamburger__bg__color: #00000079;
+	--blue__sky: #00bfff98;
+	--blue__facebook: #1978f2;
+	--pink__instagram: #e5415a;
+	--blue__mail: #1cc8fb;
+	--green__phone: #14d720;
+	/* Alerts */
+	--danger__color: #ff0000;
+	--warning__color: #ffae00;
+	--success__color: #00ff00;
+	/* Links */
+	--active__link: #bf8832;
+	/* HTML Element */
+	--header__bg: rgba(255, 255, 255, 0.73);
+	/* Background Images */
+	--header__bg: url('@Images/header-bg.jpg');
+	--section-bg: url('@Images/section-bg.jpg');
+	--home__page__row2__bg: url('@Images/header-bg.jpg');
+	--home__page__row2__img: url('@Images/Desktop/homepage_row2_img.webp');
+	--home__page__row3__img: url('@Images/Desktop/homepage_row3_img.webp');
+	--integrated__form__bg: url('@Images/Desktop/integrated-form_img.webp');
+	--desinsectisation__page__row1__img: url('@Images/desinsectisation_img.jpg');
+	--recuperation__abeilles__page__row1__img: url('@Images/recuperation-abeilles_img.jpg');
+	--desinfection__page__row1__img: url('@Images/desinfection_img.jpg');
+	--deratisation__page__row1__img: url('@Images/deratisation_img.jpg');
+	--depigeonnage__page__row1__img: url('@Images/depigeonnage_img.jpg');
+	--piegeage__page__row1__img: url('@Images/piegeage_img.jpg');
+	--traitement-bois-champi__page__row1__img: url('@Images/traitement-bois-champi_img.jpg');
+	--404__bg: url('@Images/404_bg.jpg');
+}
+
+body {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin: 0;
+	min-height: 100vh;
+	font-family: -apple-system, BlinkMacSystemFont, 'Sawarabi Gothic', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+	min-height: 100vh;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+	:root {
+		--header__bg: url('@Images/header-bg.jpg');
+		--section-bg: url('@Images/section-bg.jpg');
+		--home__page__row2__bg: url('@Images/header-bg.jpg');
+		--home__page__row2__img: url('@Images/Mobile/homepage_row2_img.webp');
+		--home__page__row3__img: url('@Images/Mobile/homepage_row3_img.webp');
+		--integrated__form__bg: url('@Images/Mobile/integrated-form_img.webp');
+		--desinsectisation__page__row1__img: url('@Images/desinsectisation_img.jpg');
+		--recuperation__abeilles__page__row1__img: url('@Images/recuperation-abeilles_img.jpg');
+		--desinfection__page__row1__img: url('@Images/desinfection_img.jpg');
+		--deratisation__page__row1__img: url('@Images/deratisation_img.jpg');
+		--depigeonnage__page__row1__img: url('@Images/depigeonnage_img.jpg');
+		--piegeage__page__row1__img: url('@Images/piegeage_img.jpg');
+		--traitement-bois-champi__page__row1__img: url('@Images/traitement-bois-champi_img.jpg');
+		--404__bg: url('@Images/404_bg.jpg');
+	}
+}

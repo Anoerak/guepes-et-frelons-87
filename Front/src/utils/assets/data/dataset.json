@@ -1,0 +1,149 @@
+{
+	"Company": {
+		"name": "Guêpes Frelons 87",
+		"siret": "00000000000000",
+		"logo": "@Images/logo.png",
+		"website": "https://guepes-frelons87.fr"
+	},
+	"contactInfos": {
+		"phone": "07 60 40 13 48",
+		"email": "guepes.frelons87@gmail.com",
+		"address": "16 route de Jumilhac",
+		"zipCode": "87500",
+		"city": "Saint-Yrieix-la-Perche"
+	},
+	"socialNetworks": {
+		"facebook": "https://www.facebook.com/guepes.frelons87",
+		"instagram": "https://www.instagram.com/guepes.frelons87/"
+	},
+	"navbarLinks": [
+		{
+			"id": 1,
+			"title": "Accueil",
+			"path": "/"
+		},
+		{
+			"id": 2,
+			"title": "Désinsectisation",
+			"path": "/desinsectisation"
+		},
+		{
+			"id": 3,
+			"title": "Récupération d'abeilles",
+			"path": "/recuperation-abeilles"
+		},
+		{
+			"id": 4,
+			"title": "Désinfection",
+			"path": "/desinfection"
+		},
+		{
+			"id": 5,
+			"title": "Dératisation",
+			"path": "/deratisation"
+		},
+		{
+			"id": 6,
+			"title": "Dépigeonnage",
+			"path": "/depigeonnage"
+		},
+		{
+			"id": 7,
+			"title": "Piégeage",
+			"path": "/piegeage"
+		},
+		{
+			"id": 8,
+			"title": "Traitements bois-champignons",
+			"path": "/traitements-bois-champignons"
+		},
+		{
+			"id": 10,
+			"title": "Contact",
+			"path": "/contact"
+		}
+	],
+	"slideShowCollection": [
+		{
+			"id": 1,
+			"path": "slide1.jpg",
+			"pathWebp": "slide1.webp",
+			"alt": "Hornets on a nest."
+		},
+		{
+			"id": 2,
+			"path": "slide2.jpg",
+			"pathWebp": "slide2.webp",
+			"alt": "A man spreading product on a wall to remove lychen."
+		},
+		{
+			"id": 3,
+			"path": "slide3.jpg",
+			"pathWebp": "slide3.webp",
+			"alt": "A bee on a tree branch."
+		},
+		{
+			"id": 4,
+			"path": "slide4.jpg",
+			"pathWebp": "slide4.webp",
+			"alt": "A man dealing with hornets on a roof."
+		},
+		{
+			"id": 5,
+			"path": "slide5.jpg",
+			"pathWebp": "slide5.webp",
+			"alt": "A mouse approaching a house."
+		}
+	],
+	"contactForm": [
+		{
+			"name": "name",
+			"id": "name",
+			"label": "Nom",
+			"placeholder": "Votre nom",
+			"type": "text",
+			"required": true
+		},
+		{
+			"name": "firstname",
+			"id": "firstname",
+			"label": "Prénom",
+			"placeholder": "Votre prénom",
+			"type": "text",
+			"required": true
+		},
+		{
+			"name": "email",
+			"id": "email",
+			"label": "Email",
+			"placeholder": "Votre email",
+			"type": "email",
+			"required": true
+		},
+		{
+			"name": "phone",
+			"id": "phone",
+			"label": "Téléphone",
+			"placeholder": "Votre téléphone",
+			"type": "tel",
+			"required": false
+		},
+		{
+			"name": "spammer",
+			"id": "spammer",
+			"label": "Your spammer email address",
+			"required": false,
+			"type": "hidden"
+		},
+		{
+			"name": "message",
+			"id": "message",
+			"label": "Message",
+			"placeholder": "Votre message",
+			"type": "textarea",
+			"cols": "45",
+			"rows": "7",
+			"required": true
+		}
+	]
+}
