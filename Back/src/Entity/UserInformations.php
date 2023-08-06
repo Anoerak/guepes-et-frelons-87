@@ -39,6 +39,9 @@ class UserInformations
     #[ORM\OneToOne(inversedBy: 'userInformations', cascade: ['persist', 'remove'])]
     private ?User $User = null;
 
+    #[ORM\Column]
+    private ?bool $deliverHere = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -136,6 +139,18 @@ class UserInformations
     public function setUser(?User $User): static
     {
         $this->User = $User;
+
+        return $this;
+    }
+
+    public function isDeliverHere(): ?bool
+    {
+        return $this->deliverHere;
+    }
+
+    public function setDeliverHere(bool $deliverHere): static
+    {
+        $this->deliverHere = $deliverHere;
 
         return $this;
     }

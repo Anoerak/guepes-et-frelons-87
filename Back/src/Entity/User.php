@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -29,6 +31,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\OneToOne(mappedBy: 'User', cascade: ['persist', 'remove'])]
     private ?UserInformations $userInformations = null;
+
+    #[ORM\OneToMany(mappedBy: 'User', targetEntity: Bill::class)]
+    private Collection $Bill;
+
+    #[ORM\OneToMany(mappedBy: 'user', targetEntity: UserDeliveryInformations::class)]
+    private Collection $userDeliveryInformations;
+
+    public function __construct()
+    {
+        $this->Bill = new ArrayCollection();
+        $this->userDeliveryInformations = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -118,6 +132,66 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         }
 
         $this->userInformations = $userInformations;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Bill>
+     */
+    public function getBill(): Collection
+    {
+        return $this->Bill;
+    }
+
+    public function addBill(Bill $bill): static
+    {
+        if (!$this->Bill->contains($bill)) {
+            $this->Bill->add($bill);
+            $bill->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeBill(Bill $bill): static
+    {
+        if ($this->Bill->removeElement($bill)) {
+            // set the owning side to null (unless already changed)
+            if ($bill->getUser() === $this) {
+                $bill->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, UserDeliveryInformations>
+     */
+    public function getUserDeliveryInformations(): Collection
+    {
+        return $this->userDeliveryInformations;
+    }
+
+    public function addUserDeliveryInformations(UserDeliveryInformations $userDeliveryInformations): static
+    {
+        if (!$this->userDeliveryInformations->contains($userDeliveryInformations)) {
+            $this->userDeliveryInformations->add($userDeliveryInformations);
+            $userDeliveryInformations->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUserDeliveryInformations(UserDeliveryInformations $userDeliveryInformations): static
+    {
+        if ($this->userDeliveryInformations->removeElement($userDeliveryInformations)) {
+            // set the owning side to null (unless already changed)
+            if ($userDeliveryInformations->getUser() === $this) {
+                $userDeliveryInformations->setUser(null);
+            }
+        }
 
         return $this;
     }
