@@ -8,6 +8,7 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/api/front-end-datas' => [[['_route' => 'api_front_end_datas', '_controller' => 'App\\Controller\\FrontEndDatasController::index'], null, ['GET' => 0], null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

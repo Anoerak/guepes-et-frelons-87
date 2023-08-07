@@ -15,6 +15,7 @@ import Desinsectisation from '@Pages/desinsectisations/Desinsectisation';
 import MentionLegales from '@Pages/mentions_legales/MentionsLegales';
 import Piegeage from '@Pages/piegeage/Piegeage';
 import RecuperationAbeilles from '@Pages/récupération_abeilles/RecuperationAbeilles';
+import Shop from '@Pages/shop/Shop';
 import TraitementBois from '@Pages/traitement_bois/TraitementBoisChampi';
 
 import FacebookLogo from '@Images/facebook-logo.png';
@@ -51,14 +52,11 @@ function App() {
 					<Route path='/recuperation-abeilles' element={<RecuperationAbeilles />} />
 					<Route path='/traitements-bois-champignons' element={<TraitementBois />} />
 				</Route>
+				<Route path='/boutique' element={<Shop />} />
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 			<div id='social-medias-links'>
-				<a
-					href='https://www.facebook.com/people/Gu%C3%AApes-Frelons-87/100063539562426/'
-					target='_blank'
-					rel='noreferrer'
-				>
+				<a href='https://www.facebook.com/people/Gu%C3%AApes-Frelons-87/100063539562426/' target='_blank' rel='noreferrer'>
 					<img src={FacebookLogo} alt='facebook' />
 				</a>
 				<a href='https://www.instagram.com/lerucherdenoah/?hl=fr' target='_blank' rel='noreferrer'>

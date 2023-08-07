@@ -28,9 +28,10 @@ const useFetch = (/** @type {string} */ path, /** @type {string} */ option) => {
 			const fetchDatas = async (/** @type {string} */ url, /** @type {string} */ option) => {
 				try {
 					const response = await axios.get(url);
+					console.log(response.data);
 					setData(response);
-					// const datas = response.data;
-					const datas = JSON.parse(response.data.result[0].json);
+					const datas = response.data;
+					// const datas = JSON.parse(response.data.result[0].json);
 					const filteredDatas = datas[option];
 					// We convert the filteredDatas to an array
 					// const renderedDatas = Object.keys(filteredDatas).map((key) => filteredDatas[key]);

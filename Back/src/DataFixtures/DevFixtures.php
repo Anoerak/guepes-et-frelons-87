@@ -2,12 +2,12 @@
 
 namespace App\DataFixtures;
 
-use DateTime;
-use App\Entity\User;
 use App\Entity\Bill;
+use App\Entity\User;
 use App\Entity\Stock;
 use DateTimeImmutable;
 use App\Entity\Product;
+use App\Entity\JsonData;
 use App\Entity\UserInformations;
 use Doctrine\Persistence\ObjectManager;
 use App\Entity\UserDeliveryInformations;
@@ -220,6 +220,21 @@ class DevFixtures extends Fixture
     }
     /* #endregion */
 
+
+    /* #region jsonFrontEndData */
+    public function jsonFrontEndDatas(ObjectManager $manager): void
+    {
+        // We create a JsonData with the content of the dataset.json file
+        $jsonDatas = new JsonData();
+        $jsonDatas->setJson(json_decode(file_get_contents(__DIR__ . '/dataset.json'), true));
+
+        $manager->persist($jsonDatas);
+
+        $manager->flush();
+    }
+    /* #endregion */
+
+
     public function load(ObjectManager $manager): void
     {
         // We call the functions to create users and userInformations
@@ -229,5 +244,6 @@ class DevFixtures extends Fixture
         $this->Bill($manager);
         $this->Product($manager);
         $this->stock($manager);
+        $this->jsonFrontEndDatas($manager);
     }
 }
