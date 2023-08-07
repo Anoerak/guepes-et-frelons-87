@@ -1,0 +1,79 @@
+# React
+
+# dependencies
+Front/node_modules
+Front/.pnp
+Front/.pnp.js
+
+# testing
+Front/coverage
+
+# production
+Front/build
+
+# misc
+Front/.DS_Store
+Front/.env.local
+Front/.env.development.local
+Front/.env.test.local
+Front/.env.production.local
+
+Front/npm-debug.log*
+Front/yarn-debug.log*
+Front/yarn-error.log*
+
+
+
+
+# SYMFONY
+###> Back/framework-bundle ###
+Back/.env.local
+Back/.env.local.php
+Back/.env.*.local
+Back/config/secrets/prod/prod.decrypt.private.php
+Back/public/bundles/
+Back/var/
+Back/vendor/
+###< Back/framework-bundle ###
+
+###> phpunit/phpunit ###
+Back/phpunit.xml
+Back/.phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> Back/phpunit-bridge ###
+Back/.phpunit.result.cache
+Back/phpunit.xml
+###< Back/phpunit-bridge ###
+
+###> Back/webpack-encore-bundle ###
+Back/node_modules/
+Back/public/build/
+Back/npm-debug.log
+Back/yarn-error.log
+###< Back/webpack-encore-bundle ###
+
+
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Front/.idea
+Front/.vscode
+Front/*.suo
+Front/*.ntvs*
+Front/*.njsproj
+Front/*.sln
+Front/*.sw?
+Back/.idea
+Back/.vscode
+Back/*.suo
+Back/*.ntvs*
+Back/*.njsproj
+Back/*.sln
+Back/*.sw?
